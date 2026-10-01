@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PIQ3D — Diseño e impresión 3D de trofeos y medallas en Sueca</title>
+<meta name="description" content="PIQ3D diseña e imprime en 3D trofeos, medallas y merchandising personalizados para clubes, carreras y eventos. Sueca, Valencia.">
+<link rel="icon" href="public/logo/extrusor_white.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader" class="loader" aria-label="Cargando PIQ3D">
+  <div class="loader__logo">
+    <img class="p"  src="public/logo/P_white.png" alt="">
+    <img class="e"  src="public/logo/extrusor_white.png" alt="">
+    <img class="q"  src="public/logo/Q_white.png" alt="">
+    <img class="n3" src="public/logo/3_white.png" alt="">
+    <img class="d"  src="public/logo/D_white.png" alt="">
+  </div>
+  <div class="loader__bar"><i></i></div>
+</div>
+
+<!-- HEADER -->
+<header class="header" id="header" data-scheme="dark">
+  <div class="header__inner">
+    <a class="header__logo" href="#top" aria-label="PIQ3D inicio">
+      <img src="public/logo/logo_white.png" alt="PIQ3D" class="logo-light">
+      <img src="public/logo/logo_dark.png" alt="" class="logo-dark" aria-hidden="true">
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <ol class="nav__links">
+        <li><a class="nav__link" href="#trabajos"><span>Trabajos</span></a></li>
+        <li><a class="nav__link" href="#nosotros"><span>Nosotros</span></a></li>
+        <li><a class="nav__link" href="#especialidades"><span>Especialidades</span></a></li>
+        <li><a class="nav__link" href="#contacto"><span>Contacto</span></a></li>
+        <li><a class="nav__link" href="https://www.instagram.com/piq3d" target="_blank" rel="noopener"><span>Instagram</span></a></li>
+      </ol>
+    </nav>
+    <button class="btn btn--small header__clock" type="button" data-hover="mask">
+      <span class="btn__bg"></span>
+      <span class="btn__content">
+        <svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="10" cy="10" r="8"/><path d="M2 10h16M10 2c3 3 3 13 0 16M10 2c-3 3-3 13 0 16"/></svg>
+        <span class="btn__label">SUECA <time class="clock">00:00</time></span>
+      </span>
+      <span class="btn__mask" aria-hidden="true">
+        <svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="10" cy="10" r="8"/><path d="M2 10h16M10 2c3 3 3 13 0 16M10 2c-3 3-3 13 0 16"/></svg>
+        <span class="btn__label">SUECA <time class="clock">00:00</time></span>
+      </span>
+    </button>
+    <button class="burger" type="button" aria-label="Menú" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" id="hero" data-scheme="dark">
+    <div class="hero__sticky">
+      <div class="hero__content">
+        <h1 class="hero__title">
+          <span class="hero__line hero__line--1">
+            <span class="hero__text"><span class="mask"><span class="word">Fuera</span></span></span>
+            <span class="hero__italic"><span class="mask"><span class="word">lo</span></span> <span class="mask"><span class="word">aburrido...</span></span></span>
+          </span>
+          <span class="hero__line hero__line--2">
+            <span class="hero__italic"><span class="mask"><span class="word">Hola</span></span></span>
+            <span class="hero__reveal">
+              <span class="hero__asset" id="heroAsset">
+                <figure class="hero__figure">
+                  <video class="hero__video" autoplay muted loop playsinline preload="auto" poster="public/video/hero-poster.jpg">
+                    <source src="public/video/hero-montaje-web.webm" type="video/webm">
+                    <source src="public/video/hero-montaje-web.mp4" type="video/mp4">
+                  </video>
+                </figure>
+              </span>
+            </span>
+            <span class="hero__text"><span class="mask"><span class="word">PIQ3D</span></span></span>
+          </span>
+        </h1>
+        <p class="hero__desc">Diseño e impresión 3D en Sueca, Valencia. Trofeos, medallas y merchandising para clubes, carreras y eventos.</p>
+        <a class="btn btn--icon hero__scroll" href="#especialidades" aria-label="Bajar" data-hover="mask">
+          <span class="btn__bg"></span>
+          <span class="btn__content"><svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 3v14M4 11l6 6 6-6"/></svg></span>
+          <span class="btn__mask" aria-hidden="true"><svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 3v14M4 11l6 6 6-6"/></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ESPECIALIDADES -->
+  <section class="specs" id="especialidades" data-scheme="light">
+    <h2 class="tag"><span>Especialidades</span></h2>
+    <ol class="specs__list">
+      <li class="specs__item"><a class="specs__link" href="#trabajos"><span class="specs__inner"><span class="specs__title"><span class="mask"><span class="word">Trofeos</span></span></span><span class="specs__asset"><span class="specs__asset-inner"><img src="public/img/fibravalencia-4x3.webp" alt=""></span></span></span></a></li>
+      <li class="specs__item"><a class="specs__link" href="#trabajos"><span class="specs__inner"><span class="specs__title"><span class="mask"><span class="word">Medallas</span></span></span><span class="specs__asset"><span class="specs__asset-inner"><img src="public/img/ad-esperanza-4x3.webp" alt=""></span></span></span></a></li>
+      <li class="specs__item"><a class="specs__link" href="#trabajos"><span class="specs__inner"><span class="specs__title"><span class="mask"><span class="word">Placas</span></span></span><span class="specs__asset"><span class="specs__asset-inner"><img src="public/img/trofeu-puchades-4x3.webp" alt=""></span></span></span></a></li>
+      <li class="specs__item"><a class="specs__link" href="#trabajos"><span class="specs__inner"><span class="specs__title"><span class="mask"><span class="word">Llaveros</span></span></span><span class="specs__asset"><span class="specs__asset-inner"><img src="public/img/logo-trofeos-4x3.webp" alt=""></span></span></span></a></li>
+      <li class="specs__item"><a class="specs__link" href="#trabajos"><span class="specs__inner"><span class="specs__title"><span class="mask"><span class="word">Carreras</span></span></span><span class="specs__asset"><span class="specs__asset-inner"><img src="public/img/la-canyada-4x3.webp" alt=""></span></span></span></a></li>
+      <li class="specs__item"><a class="specs__link" href="#trabajos"><span class="specs__inner"><span class="specs__title"><span class="mask"><span class="word">Clubes</span></span></span><span class="specs__asset"><span class="specs__asset-inner"><img src="public/img/futsal-sueca-4x3.webp" alt=""></span></span></span></a></li>
+      <li class="specs__item"><a class="specs__link" href="#trabajos"><span class="specs__inner"><span class="specs__title"><span class="mask"><span class="word">Eventos</span></span></span><span class="specs__asset"><span class="specs__asset-inner"><img src="public/img/pepe-soler-4x3.webp" alt=""></span></span></span></a></li>
+    </ol>
+    <p class="specs__desc reveal-up">Hay miles de tiendas de trofeos. Elegir la correcta para tu club o tu carrera parece complicado. ¿Por qué nosotros? Porque cada pieza se diseña desde cero y se imprime en 3D en nuestro taller de Sueca.</p>
+    <a class="btn btn--large reveal-up" href="#nosotros" data-hover="mask">
+      <span class="btn__bg"></span>
+      <span class="btn__content"><span class="btn__label">Por eso</span><svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10h14M11 4l6 6-6 6"/></svg></span>
+      <span class="btn__mask" aria-hidden="true"><span class="btn__label">Por eso</span><svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10h14M11 4l6 6-6 6"/></svg></span>
+    </a>
+  </section>
+
+  <!-- NOSOTROS -->
+  <section class="about" id="nosotros" data-scheme="light">
+    <div class="about__content">
+      <h2 class="tag"><span>Nosotros</span></h2>
+      <h3 class="about__title"><span class="words"><span class="mask"><span class="word">Diseño e impresión 3D</span></span> <span class="mask"><span class="word">para clubes con</span></span> <span class="mask"><span class="word">hambre de podio</span></span></span></h3>
+      <p class="about__desc reveal-up">Somos un taller de diseño e impresión 3D en Sueca. Modelamos cada trofeo, medalla o llavero a medida de tu club, tu carrera o tu evento, y lo imprimimos capa a capa con filamento de colores. Sin moldes, sin mínimos, sin piezas iguales a las de siempre.</p>
+      <a class="btn btn--large reveal-up" href="#contacto" data-hover="mask">
+        <span class="btn__bg"></span>
+        <span class="btn__content"><span class="btn__label">Saber más</span><svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10h14M11 4l6 6-6 6"/></svg></span>
+        <span class="btn__mask" aria-hidden="true"><span class="btn__label">Saber más</span><svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10h14M11 4l6 6-6 6"/></svg></span>
+      </a>
+    </div>
+    <div class="about__asset parallax" data-parallax="80">
+      <figure class="figure"><img src="public/img/logo-trofeos.webp" alt="Logo PIQ3D impreso en 3D con trofeos de ajedrez de fondo" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <!-- TRABAJOS -->
+  <section class="work" id="trabajos" data-scheme="dark">
+    <div class="work__container">
+      <div class="work__head">
+        <h2 class="tag tag--light"><span>Trabajos</span></h2>
+        <h3 class="work__title">
+          <span class="words"><span class="mask"><span class="word">Últimos</span></span></span><br>
+          <span class="words"><span class="mask"><span class="word">trabajos</span></span></span>
+        </h3>
+      </div>
+      <ol class="work__list">
+        <li class="case case--wide"><article><a class="case__link" href="#contacto">
+          <div class="case__asset"><video class="case__video" muted loop playsinline preload="none" poster="public/img/fibravalencia.webp"><source src="public/video/hero-trofeo.mp4" type="video/mp4"></video></div>
+          <span class="case__title">Volta a Peu FibraValencia</span>
+          <p class="case__desc">FibraValencia | Trofeo retorcido impreso en 3D para los ganadores de la 37ª Volta a Peu.</p>
+        </a></article></li>
+        <li class="case case--narrow"><article><a class="case__link" href="#contacto">
+          <div class="case__asset"><video class="case__video" muted loop playsinline preload="none" poster="public/img/futsal-sueca.webp"><source src="public/video/futsal-sueca.mp4" type="video/mp4"></video></div>
+          <span class="case__title">Torneig Ciutat de Sueca</span>
+          <p class="case__desc">FS Sueca | Trofeos negro y oro con balón para las tres categorías del torneo.</p>
+        </a></article></li>
+        <li class="case case--wide"><article><a class="case__link" href="#contacto">
+          <div class="case__asset"><video class="case__video" muted loop playsinline preload="none" poster="public/img/trofeu-puchades.webp"><source src="public/video/trofeu-puchades.mp4" type="video/mp4"></video></div>
+          <span class="case__title">Trofeu Antonio Puchades</span>
+          <p class="case__desc">SD Sueca | Bustos en oro y plata para campeón y subcampeón del torneo 2026.</p>
+        </a></article></li>
+        <li class="case case--narrow"><article><a class="case__link" href="#contacto">
+          <div class="case__asset"><img src="public/img/pepe-soler.webp" alt="" loading="lazy"></div>
+          <span class="case__title">Trofeu Pepe Soler</span>
+          <p class="case__desc">CH Sueca | Balón de balonmano en mano dorada sobre columnas impresas.</p>
+        </a></article></li>
+        <li class="case case--wide"><article><a class="case__link" href="#contacto">
+          <div class="case__asset"><img src="public/img/ad-esperanza.webp" alt="" loading="lazy"></div>
+          <span class="case__title">Placas debutante</span>
+          <p class="case__desc">AD Esperanza | Escudos personalizados con el nombre de cada jugador de la cantera.</p>
+        </a></article></li>
+        <li class="case case--narrow"><article><a class="case__link" href="#contacto">
+          <div class="case__asset"><img src="public/img/la-canyada.webp" alt="" loading="lazy"></div>
+          <span class="case__title">Volta a Peu La Canyada</span>
+          <p class="case__desc">La Canyada | Huella de hojas con lámina dorada para la XXIX edición.</p>
+        </a></article></li>
+      </ol>
+      <div class="work__cta">
+        <a class="btn btn--large btn--light" href="https://www.instagram.com/piq3d" target="_blank" rel="noopener" data-hover="mask">
+          <span class="btn__bg"></span>
+          <span class="btn__content"><span class="btn__label">Ver todos</span><svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10h14M11 4l6 6-6 6"/></svg></span>
+          <span class="btn__mask" aria-hidden="true"><span class="btn__label">Ver todos</span><svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10h14M11 4l6 6-6 6"/></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="touch" id="contacto" data-scheme="dark">
+    <div class="touch__content">
+      <h2 class="tag tag--light"><span>Contacto</span></h2>
+      <h3 class="touch__title">
+        <span class="words"><span class="mask"><span class="word">Trabaja</span></span> <span class="mask"><span class="word">con</span></span> <span class="mask"><span class="word">nosotros</span></span></span>
+      </h3>
+      <a class="btn btn--large btn--light reveal-up" href="https://wa.me/34623754444" target="_blank" rel="noopener" data-hover="mask">
+        <span class="btn__bg"></span>
+        <span class="btn__content"><span class="btn__label">Escríbenos</span><svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10h14M11 4l6 6-6 6"/></svg></span>
+        <span class="btn__mask" aria-hidden="true"><span class="btn__label">Escríbenos</span><svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10h14M11 4l6 6-6 6"/></svg></span>
+      </a>
+    </div>
+    <div class="touch__asset parallax" data-parallax="70">
+      <figure class="figure"><img src="public/img/futsal-sueca.webp" alt="Trofeos FS Sueca impresos en 3D" loading="lazy"></figure>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer" id="footer" data-scheme="light">
+  <div class="footer__logo"><img src="public/logo/logo_dark.png" alt="PIQ3D"></div>
+  <div class="footer__grid">
+    <form class="footer__form" onsubmit="event.preventDefault(); this.querySelector('input').value=''; this.classList.add('is-sent');">
+      <label class="footer__label" for="news">Apúntate a las novedades</label>
+      <div class="footer__row">
+        <input class="footer__input" id="news" type="email" placeholder="Tu email" required>
+        <button class="btn btn--icon btn--solid" type="submit" aria-label="Enviar" data-hover="mask">
+          <span class="btn__bg"></span>
+          <span class="btn__content"><svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10h14M11 4l6 6-6 6"/></svg></span>
+          <span class="btn__mask" aria-hidden="true"><svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10h14M11 4l6 6-6 6"/></svg></span>
+        </button>
+      </div>
+      <p class="footer__sent">¡Gracias! Te avisamos de lo nuevo.</p>
+      <ol class="footer__social">
+        <li><a class="btn btn--icon btn--solid" href="https://www.instagram.com/piq3d" target="_blank" rel="noopener" aria-label="Instagram" data-hover="mask"><span class="btn__bg"></span><span class="btn__content"><svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="14" height="14" rx="4"/><circle cx="10" cy="10" r="3.2"/><circle cx="14.2" cy="5.8" r=".8" fill="currentColor"/></svg></span><span class="btn__mask" aria-hidden="true"><svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="14" height="14" rx="4"/><circle cx="10" cy="10" r="3.2"/><circle cx="14.2" cy="5.8" r=".8" fill="currentColor"/></svg></span></a></li>
+        <li><a class="btn btn--icon btn--solid" href="https://www.tiktok.com/@piq3d" target="_blank" rel="noopener" aria-label="TikTok" data-hover="mask"><span class="btn__bg"></span><span class="btn__content"><svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M11 3v9.5a2.5 2.5 0 1 1-2.5-2.5M11 3c.5 2.5 2 4 4.5 4"/></svg></span><span class="btn__mask" aria-hidden="true"><svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M11 3v9.5a2.5 2.5 0 1 1-2.5-2.5M11 3c.5 2.5 2 4 4.5 4"/></svg></span></a></li>
+        <li><a class="btn btn--icon btn--solid" href="https://wa.me/34623754444" target="_blank" rel="noopener" aria-label="WhatsApp" data-hover="mask"><span class="btn__bg"></span><span class="btn__content"><svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 16l1-3.2A7 7 0 1 1 7.4 15L4 16z"/><path d="M7.5 7.5c0 3 2 5 5 5l1-1.5-1.8-.8-.7.8c-1-.4-1.7-1.1-2.1-2.1l.8-.7-.8-1.8-1.4 1.1z"/></svg></span><span class="btn__mask" aria-hidden="true"><svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 16l1-3.2A7 7 0 1 1 7.4 15L4 16z"/><path d="M7.5 7.5c0 3 2 5 5 5l1-1.5-1.8-.8-.7.8c-1-.4-1.7-1.1-2.1-2.1l.8-.7-.8-1.8-1.4 1.1z"/></svg></span></a></li>
+        <li><a class="btn btn--small btn--solid" href="mailto:contacto@piq3d.com" data-hover="mask"><span class="btn__bg"></span><span class="btn__content"><span class="btn__label">Email</span></span><span class="btn__mask" aria-hidden="true"><span class="btn__label">Email</span></span></a></li>
+      </ol>
+    </form>
+    <section class="footer__info">
+      <ol class="footer__links">
+        <li><a class="ulink" href="#trabajos">Trabajos</a></li>
+        <li><a class="ulink" href="#nosotros">Nosotros</a></li>
+        <li><a class="ulink" href="#especialidades">Especialidades</a></li>
+        <li><a class="ulink" href="#contacto">Contacto</a></li>
+        <li><a class="ulink" href="https://piq3d.com" target="_blank" rel="noopener">piq3d.com</a></li>
+      </ol>
+      <ol class="footer__offices">
+        <li class="office">
+          <dl>
+            <dt>Sueca</dt>
+            <dd>Taller de diseño e impresión 3D</dd>
+            <dd>46410 Sueca, Valencia</dd>
+            <dd><a class="ulink" href="tel:+34623754444">623 75 44 44</a> · <a class="ulink" href="https://wa.me/34623754444" target="_blank" rel="noopener">WhatsApp</a></dd>
+            <dd><a class="ulink" href="mailto:contacto@piq3d.com">contacto@piq3d.com</a></dd>
+          </dl>
+          <div class="office__img"><img src="public/img/logo-trofeos-thumb.webp" alt="" loading="lazy"></div>
+        </li>
+      </ol>
+    </section>
+  </div>
+  <ol class="footer__nav">
+    <li><a class="ulink" href="#trabajos">Trabajos</a></li>
+    <li><a class="ulink" href="#nosotros">Nosotros</a></li>
+    <li><a class="ulink" href="#especialidades">Especialidades</a></li>
+    <li><a class="ulink" href="#contacto">Contacto</a></li>
+    <li><a class="ulink" href="https://www.instagram.com/piq3d" target="_blank" rel="noopener">Instagram</a></li>
+  </ol>
+  <div class="footer__bottom">
+    <a class="footer__small-logo" href="#top"><img src="public/logo/logo_dark.png" alt="PIQ3D"></a>
+    <div class="footer__legal"><span>© 2026 PIQ3D</span><span>Hecho en Sueca, capa a capa</span></div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

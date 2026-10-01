@@ -1,0 +1,5 @@
+# PIQ3D web
+*.stackdump
+.DS_Store
+Thumbs.db
+node_modules/
