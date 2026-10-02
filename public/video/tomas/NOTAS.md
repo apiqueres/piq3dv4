@@ -39,3 +39,7 @@ Orden: 01 fibravalencia > 02 trofeu-puchades > 03 pepe-soler > 04 medalla-xiques
 - Especialidades: fotos enteras (object-fit contain) en recuadro cuadrado gris; mapa: Trofeos=fibravalencia, Medallas=medalla-xiques (anverso), Placas=logo-trofeos, Llaveros=llaveros-club, Carreras=la-canyada, Clubes=futsal-sueca, Eventos=pepe-soler.
 - Nosotros: foto pepe-soler entera, sin parallax. Trabajos: tarjetas a tamaño natural (sin recorte), pósters propios de los vídeos (poster-*.jpg), atributos width/height.
 - Contacto: título HABLEMOS + lista Email / Instagram / WhatsApp / Teléfono.
+
+## Galería (2 oct)
+- Página galeria/index.html generada con scripts/galeria.py a partir de public/img/galeria/manifest.json (33 fotos de imagenes web, todas las subcarpetas, convertidas a webp). Títulos de cada foto en el diccionario `names` del script; para añadir fotos: copiarlas a imagenes web/<categoría>, volver a ejecutar la conversión (bloque en NOTAS o repetir el paso) y `python scripts/galeria.py`.
+- Enlaces: nav "Galería", botón "Ver todos" y pie. main.js tolera páginas sin hero.

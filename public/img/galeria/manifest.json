@@ -1,0 +1,233 @@
+[
+ {
+  "cat": "Trofeos",
+  "src": "public/img/galeria/futsal-sueca.webp",
+  "w": 1095,
+  "h": 1600,
+  "title": "Torneig Ciutat de Sueca · FS Sueca"
+ },
+ {
+  "cat": "Trofeos",
+  "src": "public/img/galeria/trofeupuchades.webp",
+  "w": 1200,
+  "h": 1600,
+  "title": "Trofeu Antonio Puchades · SD Sueca"
+ },
+ {
+  "cat": "Trofeos",
+  "src": "public/img/galeria/copitasadesperanza.webp",
+  "w": 1205,
+  "h": 1600,
+  "title": "Placas debutante · AD Esperanza"
+ },
+ {
+  "cat": "Trofeos",
+  "src": "public/img/galeria/logopiq3d-con-trofeos-de-fondo.webp",
+  "w": 1450,
+  "h": 1600,
+  "title": "Logo PIQ3D y caballos de ajedrez"
+ },
+ {
+  "cat": "Trofeos",
+  "src": "public/img/galeria/trofeopepesolerchsueca.webp",
+  "w": 1200,
+  "h": 1600,
+  "title": "Trofeu Pepe Soler · CH Sueca"
+ },
+ {
+  "cat": "Trofeos",
+  "src": "public/img/galeria/trofeofibravalencia.webp",
+  "w": 1600,
+  "h": 1600,
+  "title": "Volta a Peu FibraValencia"
+ },
+ {
+  "cat": "Trofeos",
+  "src": "public/img/galeria/trofeolacanada.webp",
+  "w": 1200,
+  "h": 1600,
+  "title": "Volta a Peu La Canyada"
+ },
+ {
+  "cat": "Trofeos",
+  "src": "public/img/galeria/02-torneig-f8.webp",
+  "w": 800,
+  "h": 800,
+  "title": "Torneig F8"
+ },
+ {
+  "cat": "Trofeos",
+  "src": "public/img/galeria/03-pbrb-50anys.webp",
+  "w": 800,
+  "h": 800,
+  "title": "PBRB 50 anys"
+ },
+ {
+  "cat": "Trofeos",
+  "src": "public/img/galeria/07-trofeu-puchades.webp",
+  "w": 800,
+  "h": 800,
+  "title": "Trofeu Puchades"
+ },
+ {
+  "cat": "Trofeos",
+  "src": "public/img/galeria/10-sueca-arros-sds.webp",
+  "w": 800,
+  "h": 800,
+  "title": "Sueca Arròs · SDS"
+ },
+ {
+  "cat": "Trofeos",
+  "src": "public/img/galeria/3x3xiques.webp",
+  "w": 1600,
+  "h": 1200,
+  "title": "Valencia Xiques 3x3"
+ },
+ {
+  "cat": "Trofeos",
+  "src": "public/img/galeria/futsal-mejor-jugador.webp",
+  "w": 1200,
+  "h": 1600,
+  "title": "Mejor jugador · Futsal"
+ },
+ {
+  "cat": "Trofeos",
+  "src": "public/img/galeria/escudo-puchades.webp",
+  "w": 178,
+  "h": 233,
+  "title": "escudo-puchades"
+ },
+ {
+  "cat": "Trofeos",
+  "src": "public/img/galeria/fallasucro.webp",
+  "w": 800,
+  "h": 800,
+  "title": "Falla Sucro"
+ },
+ {
+  "cat": "Trofeos",
+  "src": "public/img/galeria/reconociemento-para-los-participantes-luis-vives.webp",
+  "w": 1168,
+  "h": 1600,
+  "title": "Reconocimiento Luis Vives"
+ },
+ {
+  "cat": "Trofeos",
+  "src": "public/img/galeria/trofeo-condecoracion.webp",
+  "w": 1179,
+  "h": 1574,
+  "title": "Condecoración"
+ },
+ {
+  "cat": "Trofeos",
+  "src": "public/img/galeria/trofeo-paellas-fallas.webp",
+  "w": 1179,
+  "h": 1387,
+  "title": "Concurso de paellas · Fallas"
+ },
+ {
+  "cat": "Medallas",
+  "src": "public/img/galeria/medallaconfondo.webp",
+  "w": 1200,
+  "h": 1600,
+  "title": "Medalla Valencia Xiques 3x3"
+ },
+ {
+  "cat": "Medallas",
+  "src": "public/img/galeria/medallasajedrezsueca.webp",
+  "w": 1097,
+  "h": 1335,
+  "title": "Medallas ajedrez Sueca"
+ },
+ {
+  "cat": "Medallas",
+  "src": "public/img/galeria/medallasenselimitsfondo.webp",
+  "w": 1320,
+  "h": 1600,
+  "title": "Medalla 10K Sense Límits"
+ },
+ {
+  "cat": "Medallas",
+  "src": "public/img/galeria/valencia-xiques-reverso.webp",
+  "w": 975,
+  "h": 1300,
+  "title": "Valencia Xiques · reverso"
+ },
+ {
+  "cat": "Merchandising",
+  "src": "public/img/galeria/01-llaveros-club.webp",
+  "w": 800,
+  "h": 800,
+  "title": "Llaveros de club"
+ },
+ {
+  "cat": "Merchandising",
+  "src": "public/img/galeria/02-figuritas.webp",
+  "w": 800,
+  "h": 800,
+  "title": "Figuritas"
+ },
+ {
+  "cat": "Merchandising",
+  "src": "public/img/galeria/03-llaveros.webp",
+  "w": 800,
+  "h": 800,
+  "title": "Llaveros"
+ },
+ {
+  "cat": "Merchandising",
+  "src": "public/img/galeria/05-pin-falla.webp",
+  "w": 800,
+  "h": 800,
+  "title": "Pin fallero"
+ },
+ {
+  "cat": "Merchandising",
+  "src": "public/img/galeria/06-imanes.webp",
+  "w": 800,
+  "h": 800,
+  "title": "Imanes"
+ },
+ {
+  "cat": "Merchandising",
+  "src": "public/img/galeria/carta-llaveros.webp",
+  "w": 649,
+  "h": 496,
+  "title": "Carta de llaveros"
+ },
+ {
+  "cat": "Merchandising",
+  "src": "public/img/galeria/imanes-regalo.webp",
+  "w": 800,
+  "h": 800,
+  "title": "Imanes de regalo"
+ },
+ {
+  "cat": "Cartas QR",
+  "src": "public/img/galeria/cocobeach.webp",
+  "w": 835,
+  "h": 835,
+  "title": "Carta QR · Coco Beach"
+ },
+ {
+  "cat": "Cartas QR",
+  "src": "public/img/galeria/rtecaquintin.webp",
+  "w": 927,
+  "h": 927,
+  "title": "Carta QR · Ca Quintín"
+ },
+ {
+  "cat": "Cartas QR",
+  "src": "public/img/galeria/rteelniu.webp",
+  "w": 1028,
+  "h": 1028,
+  "title": "Carta QR · El Niu"
+ },
+ {
+  "cat": "Cartas QR",
+  "src": "public/img/galeria/sushiroom.webp",
+  "w": 1152,
+  "h": 1152,
+  "title": "Carta QR · Sushi Room"
+ }
+]

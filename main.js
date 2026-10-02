@@ -16,7 +16,7 @@
   $$('a[href^="#"]').forEach((a) => a.addEventListener('click', (e) => {
     const id = a.getAttribute('href');
     const target = id === '#top' ? 0 : $(id);
-    if (target === null) return;
+    if (target === null || id.length < 2) return;
     e.preventDefault();
     lenis.scrollTo(target, { offset: 0, duration: 1.4, easing: (t) => 1 - Math.pow(1 - t, 4) });
     document.body.classList.remove('menu-open');
@@ -31,7 +31,7 @@
 
   /* ---------- vídeo vertical en móviles en vertical ---------- */
   const heroVideo = $('.hero__video');
-  if (matchMedia('(max-width: 1023px) and (orientation: portrait)').matches) {
+  if (heroVideo && matchMedia('(max-width: 1023px) and (orientation: portrait)').matches) {
     heroVideo.poster = 'public/video/hero-poster-vertical.jpg';
     $$('source', heroVideo).forEach((s) => { s.src = s.src.replace('hero-montaje-web', 'hero-montaje-vertical-web'); });
     heroVideo.load();
@@ -47,13 +47,13 @@
     if (ready) return; ready = true; clearInterval(fake); setBar(100);
     setTimeout(() => {
       loader.classList.add('is-done');
-      heroVideo.play().catch(() => {});
+      if (heroVideo) heroVideo.play().catch(() => {});
       setTimeout(() => { html.classList.add('is-intro'); lenis.start(); }, 250);
-      setTimeout(() => { $('#heroAsset').classList.add('is-ready'); ScrollTrigger.refresh(); }, 1700);
+      setTimeout(() => { const a = $('#heroAsset'); if (a) a.classList.add('is-ready'); ScrollTrigger.refresh(); }, 1700);
     }, 350);
   };
   const fontsReady = document.fonts ? document.fonts.ready : Promise.resolve();
-  const videoReady = new Promise((res) => { if (heroVideo.readyState >= 3) res(); heroVideo.addEventListener('canplay', res, { once: true }); });
+  const videoReady = new Promise((res) => { if (!heroVideo || heroVideo.readyState >= 3) res(); else heroVideo.addEventListener('canplay', res, { once: true }); });
   Promise.all([fontsReady, videoReady]).then(finish);
   window.addEventListener('load', () => setTimeout(finish, 600));
   setTimeout(finish, 4500);
@@ -62,7 +62,7 @@
   const hero = $('#hero'), asset = $('#heroAsset'), sticky = $('.hero__sticky');
   const offsetIn = (el, sel) => { let left = 0, top = 0, n = el; while (n && !n.matches(sel)) { left += n.offsetLeft; top += n.offsetTop; n = n.offsetParent; } return { left, top }; };
   const skewPoly = () => { const t = asset.offsetHeight * 0.1763; return `polygon(${t}px 0,100% 0,calc(100% - ${t}px) 100%,0 100%)`; };
-  if (!reduce) {
+  if (!reduce && hero && asset) {
     gsap.fromTo(asset,
       { scale: 1, x: 0, y: 0, clipPath: () => skewPoly() },
       {
@@ -103,7 +103,7 @@
     $$('.case--narrow').forEach((el) => {
       gsap.fromTo(el, { y: 160 }, { y: 40, ease: 'none', scrollTrigger: { trigger: el, start: 'top bottom', end: 'bottom top', scrub: true } });
     });
-    gsap.to('.work__head', { opacity: 0.25, ease: 'none', scrollTrigger: { trigger: '.work__list', start: 'top 80%', end: 'top 20%', scrub: true } });
+    if ($('.work__list')) gsap.to('.work__head', { opacity: 0.25, ease: 'none', scrollTrigger: { trigger: '.work__list', start: 'top 80%', end: 'top 20%', scrub: true } });
   }
 
   /* ---------- vídeos de los trabajos: reproducir al pasar el ratón ---------- */
@@ -119,7 +119,7 @@
 
   /* ---------- menú móvil ---------- */
   const burger = $('.burger');
-  burger.addEventListener('click', () => {
+  if (burger) burger.addEventListener('click', () => {
     const open = document.body.classList.toggle('menu-open');
     burger.setAttribute('aria-expanded', open);
     open ? lenis.stop() : lenis.start();
