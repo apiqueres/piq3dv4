@@ -100,10 +100,6 @@
       const amt = +el.dataset.parallax || 60;
       gsap.fromTo(el.querySelector('.figure'), { y: -amt }, { y: amt, ease: 'none', scrollTrigger: { trigger: el, start: 'top bottom', end: 'bottom top', scrub: true } });
     });
-    $$('.case__asset').forEach((el) => {
-      const media = el.querySelector('img, video');
-      gsap.fromTo(media, { yPercent: -4 }, { yPercent: 4, ease: 'none', scrollTrigger: { trigger: el, start: 'top bottom', end: 'bottom top', scrub: true } });
-    });
     $$('.case--narrow').forEach((el) => {
       gsap.fromTo(el, { y: 160 }, { y: 40, ease: 'none', scrollTrigger: { trigger: el, start: 'top bottom', end: 'bottom top', scrub: true } });
     });
