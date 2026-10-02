@@ -34,3 +34,8 @@ Orden: 01 fibravalencia > 02 trofeu-puchades > 03 pepe-soler > 04 medalla-xiques
 - main.js carga la versión vertical en pantallas <=767px en orientación vertical (clase html.is-portrait; el asset del titular pasa a formato retrato).
 - Contacto real: contacto@piq3d.com, 623 75 44 44 (tel y WhatsApp wa.me/34623754444).
 - Saldo Higgsfield: 1,5 créditos.
+
+## Correcciones 2 oct
+- Especialidades: fotos enteras (object-fit contain) en recuadro cuadrado gris; mapa: Trofeos=fibravalencia, Medallas=medalla-xiques (anverso), Placas=logo-trofeos, Llaveros=llaveros-club, Carreras=la-canyada, Clubes=futsal-sueca, Eventos=pepe-soler.
+- Nosotros: foto pepe-soler entera, sin parallax. Trabajos: tarjetas a tamaño natural (sin recorte), pósters propios de los vídeos (poster-*.jpg), atributos width/height.
+- Contacto: título HABLEMOS + lista Email / Instagram / WhatsApp / Teléfono.
