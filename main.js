@@ -92,7 +92,7 @@
   const io = new IntersectionObserver((entries) => entries.forEach((en) => {
     if (en.isIntersecting) { en.target.classList.add('is-revealed'); io.unobserve(en.target); }
   }), { rootMargin: '0px 0px -12% 0px', threshold: 0.05 });
-  $$('.words, .specs__title, .reveal-up').forEach((el) => io.observe(el));
+  $$('.words, .specs__title, .specs__item, .reveal-up').forEach((el) => io.observe(el));
 
   /* ---------- parallax de imágenes y tarjetas ---------- */
   if (!reduce) {
