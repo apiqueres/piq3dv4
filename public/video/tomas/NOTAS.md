@@ -43,3 +43,6 @@ Orden: 01 fibravalencia > 02 trofeu-puchades > 03 pepe-soler > 04 medalla-xiques
 ## Galería (2 oct)
 - Página galeria/index.html generada con scripts/galeria.py a partir de public/img/galeria/manifest.json (33 fotos de imagenes web, todas las subcarpetas, convertidas a webp). Títulos de cada foto en el diccionario `names` del script; para añadir fotos: copiarlas a imagenes web/<categoría>, volver a ejecutar la conversión (bloque en NOTAS o repetir el paso) y `python scripts/galeria.py`.
 - Enlaces: nav "Galería", botón "Ver todos" y pie. main.js tolera páginas sin hero.
+
+## Reel (2 oct)
+- scripts/reel.py genera public/video/reel-piq3d.mp4 (720x1280, 24 fps, sin audio): cartela intro 2,6 s (FUERA / LO / ABURRIDO..., Anton, palabras que suben, cursivas inclinadas 10°) + hero-montaje-vertical.mp4 + cartela final 3,4 s (logo, ENTRA EN LA WEB, piq3d.com en amarillo). Fuentes en scripts/fonts.
