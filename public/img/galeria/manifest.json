@@ -1,6 +1,13 @@
 [
  {
   "cat": "Trofeos",
+  "src": "public/img/galeria/juntos-por-super-ivan.webp",
+  "w": 1200,
+  "h": 1600,
+  "title": "Juntos por Super Iván · Valencia CF Academia"
+ },
+ {
+  "cat": "Trofeos",
   "src": "public/img/galeria/futsal-sueca.webp",
   "w": 1095,
   "h": 1600,
