@@ -217,6 +217,8 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .contact dt{font-family:var(--font);font-weight:800;font-stretch:78%;text-transform:uppercase;font-size:clamp(14px,1.2vw,18px);color:var(--grey-2)}
 .contact dd{font-size:clamp(18px,1.8vw,26px);font-weight:500}
 .touch__title{margin-bottom:32px}
+.touch{row-gap:clamp(48px,8vw,96px)}
+.touch__cta{display:flex;justify-content:center;max-width:560px}
 
 /* ---------- FOOTER ---------- */
 .footer{position:relative;z-index:3;background:var(--light);color:var(--dark);padding:var(--gutter) var(--gutter) 0}
