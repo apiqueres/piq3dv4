@@ -12,7 +12,7 @@
   --fs-h3:min(5.8vw,84px);
   --fs-nav:clamp(16px,1.66vw,24px);
   --fs-body:clamp(16px,1.25vw,18px);
-  --asset-w:1.25em; --asset-h:.98em;
+  --asset-w:1.2em; --asset-h:.9em;
 }
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
@@ -116,7 +116,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .hero__sticky{position:sticky;top:0;height:100svh;overflow:clip}
 .hero__content{height:100svh;display:grid;grid-template-rows:1fr min-content;grid-template-columns:1fr min-content;column-gap:var(--gutter);padding:calc(var(--header-h) + 24px) 0 var(--gutter)}
 .hero__title{grid-column:1/-1;align-self:center;display:flex;flex-direction:column;align-items:center;row-gap:.06em;font-size:var(--fs-hero);line-height:.84;width:100%}
-.hero__line{display:flex;align-items:flex-start;white-space:nowrap;gap:.35ch}
+.hero__line{display:flex;align-items:center;white-space:nowrap;gap:.35ch}
 .hero__line--1{padding-right:min(6vw,90px);transform:translateX(min(3vw,45px))}
 .hero__line--2{padding-left:min(14vw,200px);transform:translateX(min(-7vw,-100px))}
 .is-intro .hero__line{animation:line-center 1s var(--ease) forwards}
@@ -127,7 +127,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 @keyframes skew-in{to{transform:skewX(var(--skew))}}
 .is-intro .hero .mask .word{animation:word-up 1s var(--ease) forwards}
 /* vídeo dentro del titular: paralelogramo sesgado */
-.hero__reveal{display:block;align-self:center;margin:0 .1ch}
+.hero__reveal{display:block;align-self:center;margin:0 .1ch;line-height:0}
 .hero__asset{position:relative;display:grid;justify-content:center;width:calc(var(--asset-w) + var(--asset-h)*var(--skew-tan));height:var(--asset-h);overflow:clip;clip-path:polygon(calc(var(--asset-h)*var(--skew-tan)) 0,100% 0,calc(100% - var(--asset-h)*var(--skew-tan)) 100%,0 100%);transform-origin:center;will-change:transform,clip-path}
 .hero__asset.is-hidden{width:0;clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}
 .is-intro .hero__asset{animation:asset-in 1s var(--ease) .15s forwards}
@@ -225,6 +225,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 /* ---------- responsive ---------- */
 @media (max-width:1023px){
   :root{--fs-hero:15vw;--fs-huge:21vw}
+  .is-portrait .hero{--asset-w:.95em;--asset-h:1.5em}
   .nav{display:none}.burger{display:block}.header__inner{grid-template-columns:1fr auto auto;gap:12px}
   .hero__line{flex-wrap:wrap;justify-content:center;white-space:normal;padding:0!important;transform:none!important}
   .hero__title{row-gap:.2em}
@@ -237,7 +238,6 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 }
 @media (max-width:640px){
   :root{--gutter:16px;--header-h:64px}
-  .is-portrait .hero{--asset-w:.95em;--asset-h:1.5em}
   .header__logo,.header__logo img{height:52px}
   .hero__line{gap:.25ch}
   .specs__asset,.specs__link:hover .specs__asset{width:0}

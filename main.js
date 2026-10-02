@@ -31,7 +31,7 @@
 
   /* ---------- vídeo vertical en móviles en vertical ---------- */
   const heroVideo = $('.hero__video');
-  if (matchMedia('(max-width: 767px) and (orientation: portrait)').matches) {
+  if (matchMedia('(max-width: 1023px) and (orientation: portrait)').matches) {
     heroVideo.poster = 'public/video/hero-poster-vertical.jpg';
     $$('source', heroVideo).forEach((s) => { s.src = s.src.replace('hero-montaje-web', 'hero-montaje-vertical-web'); });
     heroVideo.load();
@@ -59,7 +59,7 @@
   setTimeout(finish, 4500);
 
   /* ---------- hero: el vídeo crece hasta cubrir la pantalla ---------- */
-  const hero = $('#hero'), asset = $('#heroAsset');
+  const hero = $('#hero'), asset = $('#heroAsset'), sticky = $('.hero__sticky');
   const offsetIn = (el, sel) => { let left = 0, top = 0, n = el; while (n && !n.matches(sel)) { left += n.offsetLeft; top += n.offsetTop; n = n.offsetParent; } return { left, top }; };
   const skewPoly = () => { const t = asset.offsetHeight * 0.1763; return `polygon(${t}px 0,100% 0,calc(100% - ${t}px) 100%,0 100%)`; };
   if (!reduce) {
@@ -67,9 +67,9 @@
       { scale: 1, x: 0, y: 0, clipPath: () => skewPoly() },
       {
         ease: 'none', immediateRender: false,
-        scale: () => Math.max(innerWidth / asset.offsetWidth, innerHeight / asset.offsetHeight) * 1.02,
-        x: () => innerWidth / 2 - (offsetIn(asset, '.hero__sticky').left + asset.offsetWidth / 2),
-        y: () => innerHeight / 2 - (offsetIn(asset, '.hero__sticky').top + asset.offsetHeight / 2),
+        scale: () => Math.max(sticky.clientWidth / asset.offsetWidth, sticky.clientHeight / asset.offsetHeight) * 1.02,
+        x: () => sticky.clientWidth / 2 - (offsetIn(asset, '.hero__sticky').left + asset.offsetWidth / 2),
+        y: () => sticky.clientHeight / 2 - (offsetIn(asset, '.hero__sticky').top + asset.offsetHeight / 2),
         clipPath: 'polygon(0px 0,100% 0,calc(100% - 0px) 100%,0 100%)',
         scrollTrigger: { trigger: hero, start: 'top top', end: 'bottom bottom', scrub: true, invalidateOnRefresh: true }
       });
