@@ -161,7 +161,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .specs .btn{margin-top:48px}
 
 /* ---------- NOSOTROS ---------- */
-.about{position:relative;z-index:2;background:var(--light);color:var(--dark);display:grid;grid-template-columns:1fr 1fr;column-gap:var(--gutter);padding:var(--gutter);align-items:start}
+.about{position:relative;z-index:2;background:var(--light);color:var(--dark);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:var(--gutter);padding:var(--gutter);align-items:start}
 .about__content{align-self:center;padding:min(8vw,120px) 0}
 .about__title{margin-top:clamp(24px,3.3vw,48px);font-size:var(--fs-h3);line-height:.9;letter-spacing:0}
 .about__title .mask{padding:.18em .04em .08em;margin:-.18em -.04em -.08em}
@@ -190,8 +190,8 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .work__cta .btn{pointer-events:auto}
 
 /* ---------- CONTACTO ---------- */
-.touch{position:relative;z-index:3;background:var(--dark);color:var(--light);display:grid;grid-template-columns:1fr 1fr;column-gap:var(--gutter);padding:var(--gutter);align-items:center}
-.touch__title{margin:24px 0 64px;font-size:var(--fs-huge);line-height:.84;letter-spacing:0}
+.touch{position:relative;z-index:3;background:var(--dark);color:var(--light);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:var(--gutter);padding:var(--gutter);align-items:center}
+.touch__title{margin:24px 0 64px;font-size:min(13.5vw,190px);line-height:.84;letter-spacing:0}
 .touch__title .words{display:block;max-width:12ch}
 .touch .figure{aspect-ratio:auto}
 .contact{display:grid;gap:14px;margin:8px 0 40px;max-width:560px}
