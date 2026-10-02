@@ -202,7 +202,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .case__link:hover .case__asset img,.case__link:hover .case__asset video{transform:scale(1.03)}
 .case__title{display:block;margin-top:16px;font-size:clamp(18px,1.66vw,24px);line-height:.85}
 .case__desc{margin-top:12px;color:var(--grey-2);font-size:var(--fs-body);line-height:1.56}
-.work__cta{position:sticky;top:0;height:100svh;display:grid;place-items:center;margin-top:-100svh;pointer-events:none}
+.work__cta{position:sticky;top:0;z-index:3;height:100svh;display:grid;place-items:center;margin-top:-100svh;pointer-events:none}
 .work__cta .btn{pointer-events:auto}
 
 /* ---------- CONTACTO ---------- */
