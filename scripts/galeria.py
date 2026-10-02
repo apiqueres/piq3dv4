@@ -3,7 +3,7 @@ os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 items=json.load(open('public/img/galeria/manifest.json',encoding='utf-8'))
 idx=open('index.html',encoding='utf-8').read()
 head=idx[idx.index('<!-- HEADER -->'):idx.index('<main id="top">')]
-foot=idx[idx.index('<!-- FOOTER -->'):idx.index('<script src="https://cdnjs')]
+foot=idx[idx.index('<!-- FOOTER -->'):idx.index('<script src="public/vendor/')]
 def rel(x): return x.replace('href="public/','href="../public/').replace('src="public/','src="../public/').replace('href="#top"','href="../"').replace('href="#','href="../#').replace('href="galeria/"','href="./"')
 head=rel(head); foot=rel(foot)
 order=['Trofeos','Medallas','Merchandising','Cartas QR']
@@ -14,7 +14,7 @@ for i,cat in enumerate(order):
     secs.append(f'  <section class="gal" id="{anchor}" data-scheme="{"light" if light else "dark"}">\n    <div class="gal__head">\n      <h2 class="tag{"" if light else " tag--light"}"><span>{cat}</span></h2>\n      <h3 class="gal__title"><span class="words"><span class="mask"><span class="word">{cat}</span></span></span></h3>\n    </div>\n    <ul class="gal__grid">\n{cards}    </ul>\n  </section>\n')
 btn='<a class="btn btn--large btn--light reveal-up" href="https://wa.me/34623754444" target="_blank" rel="noopener" data-hover="mask"><span class="btn__bg"></span><span class="btn__content"><span class="btn__label">Escríbenos</span><svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10h14M11 4l6 6-6 6"/></svg></span><span class="btn__mask" aria-hidden="true"><span class="btn__label">Escríbenos</span><svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10h14M11 4l6 6-6 6"/></svg></span></a>'
 loader=idx[idx.index('<!-- LOADER -->'):idx.index('<!-- HEADER -->')].replace('src="public/','src="../public/')
-fonts=idx[idx.index('<link rel="preconnect"'):idx.index('<link rel="stylesheet"')]
+fonts=idx[idx.index('<link rel="stylesheet" href="public/fonts/'):idx.index('<link rel="stylesheet" href="styles.css')].replace('href="public/','href="../public/')
 page=f'''<!doctype html>
 <html lang="es">
 <head>
@@ -23,7 +23,7 @@ page=f'''<!doctype html>
 <title>Galería — PIQ3D</title>
 <meta name="description" content="Todos los trofeos, medallas, merchandising y cartas QR impresos en 3D por PIQ3D en Sueca.">
 <link rel="icon" href="../public/logo/extrusor_white.png">
-{fonts}<link rel="stylesheet" href="../styles.css?v=10">
+{fonts}<link rel="stylesheet" href="../styles.css?v=14">
 </head>
 <body class="page-galeria">
 
@@ -48,9 +48,9 @@ page=f'''<!doctype html>
 
 </main>
 
-{foot}<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+{foot}<script src="../public/vendor/gsap.min.js"></script>
+<script src="../public/vendor/ScrollTrigger.min.js"></script>
+<script src="../public/vendor/lenis.min.js"></script>
 <script src="../main.js?v=10"></script>
 </body>
 </html>
