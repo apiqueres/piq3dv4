@@ -280,9 +280,9 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .gal__head{display:flex;flex-direction:column;align-items:flex-start;gap:24px;margin-bottom:clamp(32px,4vw,56px)}
 .gal__grid{columns:3;column-gap:var(--gutter)}
 .gal__item{break-inside:avoid;margin:0 0 var(--gutter)}
-.gal__item figure{position:relative;overflow:clip;background:#1a1a1a}
-.gal[data-scheme="light"] .gal__item figure{background:var(--ph)}
-.gal__item img{width:100%;height:auto;display:block;transition:transform .8s var(--ease)}
+.gal__item figure{position:relative;overflow:clip}
+.gal__item img{width:100%;height:auto;display:block;background:#1a1a1a;transition:transform .8s var(--ease)}
+.gal[data-scheme="light"] .gal__item img{background:var(--ph)}
 .gal__item:hover img{transform:scale(1.03)}
 .gal__item figcaption{margin-top:10px;font-family:var(--font);font-weight:800;font-stretch:78%;text-transform:uppercase;font-size:clamp(14px,1.2vw,18px)}
 .gal-cta{min-height:60svh;grid-template-columns:1fr}
