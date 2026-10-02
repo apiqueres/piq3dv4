@@ -13,13 +13,22 @@
   gsap.ticker.lagSmoothing(0);
   lenis.stop();
 
+  /* ---------- menú móvil ---------- */
+  const burger = $('.burger');
+  const setMenu = (open) => {
+    if (open === document.body.classList.contains('menu-open')) return;
+    document.body.classList.toggle('menu-open', open);
+    if (burger) burger.setAttribute('aria-expanded', open);
+    open ? lenis.stop() : lenis.start();
+  };
+
   $$('a[href^="#"]').forEach((a) => a.addEventListener('click', (e) => {
     const id = a.getAttribute('href');
     const target = id === '#top' ? 0 : $(id);
     if (target === null || id.length < 2) return;
     e.preventDefault();
+    setMenu(false);
     lenis.scrollTo(target, { offset: 0, duration: 1.4, easing: (t) => 1 - Math.pow(1 - t, 4) });
-    document.body.classList.remove('menu-open');
   }));
 
   /* ---------- reloj local (Sueca) ---------- */
@@ -117,13 +126,7 @@
     $$('.case__video').forEach((v) => vio.observe(v));
   }
 
-  /* ---------- menú móvil ---------- */
-  const burger = $('.burger');
-  if (burger) burger.addEventListener('click', () => {
-    const open = document.body.classList.toggle('menu-open');
-    burger.setAttribute('aria-expanded', open);
-    open ? lenis.stop() : lenis.start();
-  });
+  if (burger) burger.addEventListener('click', () => setMenu(!document.body.classList.contains('menu-open')));
 
   window.addEventListener('resize', () => ScrollTrigger.refresh());
 })();
