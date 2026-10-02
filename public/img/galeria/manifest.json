@@ -11,7 +11,7 @@
   "src": "public/img/galeria/trofeupuchades.webp",
   "w": 1200,
   "h": 1600,
-  "title": "Trofeu Antonio Puchades · SD Sueca"
+  "title": "Trofeu Antonio Puchades 2026 · SD Sueca"
  },
  {
   "cat": "Trofeos",
@@ -67,7 +67,7 @@
   "src": "public/img/galeria/07-trofeu-puchades.webp",
   "w": 800,
   "h": 800,
-  "title": "Trofeu Puchades"
+  "title": "Trofeu Antonio Puchades 2025 · SD Sueca"
  },
  {
   "cat": "Trofeos",
@@ -89,13 +89,6 @@
   "w": 1200,
   "h": 1600,
   "title": "Mejor jugador · Futsal"
- },
- {
-  "cat": "Trofeos",
-  "src": "public/img/galeria/escudo-puchades.webp",
-  "w": 178,
-  "h": 233,
-  "title": "escudo-puchades"
  },
  {
   "cat": "Trofeos",
