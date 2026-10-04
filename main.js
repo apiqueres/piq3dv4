@@ -71,7 +71,8 @@
   const hero = $('#hero'), asset = $('#heroAsset'), sticky = $('.hero__sticky');
   const offsetIn = (el, sel) => { let left = 0, top = 0, n = el; while (n && !n.matches(sel)) { left += n.offsetLeft; top += n.offsetTop; n = n.offsetParent; } return { left, top }; };
   const skewPoly = () => { const t = asset.offsetHeight * 0.1763; return `polygon(${t}px 0,100% 0,calc(100% - ${t}px) 100%,0 100%)`; };
-  if (!reduce && hero && asset) {
+  /* también con «reducir movimiento»: el despliegue lo controla el propio scroll del usuario */
+  if (hero && asset) {
     gsap.fromTo(asset,
       { scale: 1, x: 0, y: 0, clipPath: () => skewPoly() },
       {

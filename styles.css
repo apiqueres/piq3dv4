@@ -273,7 +273,8 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
   .footer__row{flex-direction:column;align-items:stretch}
 }
 @media (prefers-reduced-motion:reduce){
-  .mask .word,.hero__asset,.hero__desc,.hero__scroll,.hero__line,.reveal-up{animation:none!important;transform:none!important;opacity:1!important;width:auto}
+  .mask .word,.hero__desc,.hero__scroll,.hero__line,.reveal-up{animation:none!important;transform:none!important;opacity:1!important;width:auto}
+  .hero__asset{animation:none!important}
 }
 
 /* ---------- GALERÍA ---------- */
