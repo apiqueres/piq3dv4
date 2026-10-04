@@ -134,6 +134,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .is-intro .hero__asset{animation:asset-in 1s var(--ease) .15s forwards}
 @keyframes asset-in{from{width:0;clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}to{width:calc(var(--asset-w) + var(--asset-h)*var(--skew-tan));clip-path:polygon(calc(var(--asset-h)*var(--skew-tan)) 0,100% 0,calc(100% - var(--asset-h)*var(--skew-tan)) 100%,0 100%)}}
 .hero__asset.is-ready{animation:none!important}
+.is-portrait .hero{--asset-w:.95em;--asset-h:1.5em}
 .hero__figure{width:100%;height:100%;grid-area:1/1}
 /* menú móvil */
 .menu-open .nav{display:grid;position:fixed;inset:var(--header-h) 0 0 0;background:var(--dark);color:var(--light);place-items:center;pointer-events:auto}
@@ -250,7 +251,6 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 /* ---------- responsive ---------- */
 @media (max-width:1023px){
   :root{--fs-hero:15vw;--fs-huge:21vw}
-  .is-portrait .hero{--asset-w:.95em;--asset-h:1.5em}
   .nav{display:none}.burger{display:block}.header__inner{grid-template-columns:1fr auto auto;gap:12px}
   .hero__line{flex-wrap:wrap;justify-content:center;white-space:normal;padding:0!important;transform:none!important}
   .hero__title{row-gap:.2em}

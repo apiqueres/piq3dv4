@@ -38,9 +38,9 @@
   };
   tick(); setInterval(tick, 15000);
 
-  /* ---------- vídeo vertical en móviles en vertical ---------- */
+  /* ---------- vídeo vertical en pantallas en vertical (móvil, tablet o monitor girado) ---------- */
   const heroVideo = $('.hero__video');
-  if (heroVideo && matchMedia('(max-width: 1023px) and (orientation: portrait)').matches) {
+  if (heroVideo && matchMedia('(orientation: portrait)').matches) {
     heroVideo.poster = 'public/video/hero-poster-vertical.jpg';
     $$('source', heroVideo).forEach((s) => { s.src = s.src.replace('hero-montaje-web', 'hero-montaje-vertical-web'); });
     heroVideo.load();
@@ -83,7 +83,7 @@
         scrollTrigger: { trigger: hero, start: 'top top', end: 'bottom bottom', scrub: true, invalidateOnRefresh: true }
       });
     gsap.fromTo(heroVideo, { scale: 1.35 }, { scale: 1, ease: 'none', scrollTrigger: { trigger: hero, start: 'top top', end: 'bottom bottom', scrub: true } });
-    gsap.to('.hero__desc, .hero__scroll, .hero__text, .hero__italic', { opacity: 0, ease: 'none', scrollTrigger: { trigger: hero, start: '30% top', end: '60% top', scrub: true } });
+    gsap.to('.hero__desc, .hero__scroll, .hero__text, .hero__italic', { opacity: 0, ease: 'none', scrollTrigger: { trigger: hero, start: '25% top', end: '50% top', scrub: true } });
   }
 
   /* ---------- cabecera: cambia de color según la sección ---------- */
