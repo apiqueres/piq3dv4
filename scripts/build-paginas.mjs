@@ -32,6 +32,7 @@ import { SERVICIOS_B_PAG } from './paginas/servicios-b.mjs';
 import { CLIENTES_PAG } from './paginas/clientes.mjs';
 import { PUEBLOS_PAG } from './paginas/pueblos.mjs';
 import { BLOG_PAG } from './paginas/blog.mjs';
+import { PADEL_PAG } from './paginas/padel.mjs';
 
 const RAIZ = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const HOY = new Date().toISOString().slice(0, 10);
@@ -41,7 +42,7 @@ const indexHtml = await readFile(resolve(RAIZ, 'index.html'), 'utf8');
 const trozos = trozosPortada(indexHtml);
 const casos = Object.fromEntries(CASOS.map((c) => [c.slug, c]));
 
-const paginas = [...SERVICIOS_PAG, ...SERVICIOS_B_PAG, ...CLIENTES_PAG, ...ZONAS_PAG, ...PUEBLOS_PAG, paginaIndice(CASOS), ...CASOS.map((c) => paginaCaso(c, casos)), ...BLOG_PAG];
+const paginas = [...SERVICIOS_PAG, ...SERVICIOS_B_PAG, ...CLIENTES_PAG, ...PADEL_PAG, ...ZONAS_PAG, ...PUEBLOS_PAG, paginaIndice(CASOS), ...CASOS.map((c) => paginaCaso(c, casos)), ...BLOG_PAG];
 
 /* ---------- render ---------- */
 const salida = paginas.map((p) => ({ p, url: `/${p.ruta}/`, html: render(p, { trozos, casos }) }));

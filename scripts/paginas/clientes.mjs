@@ -127,7 +127,7 @@ export const CLIENTES_PAG = [
           { p: '¿Trabajáis con clubes fuera de Valencia?', r: '<p>Sí. La AD Esperanza es de Madrid: todo por WhatsApp y envío en 48 horas.</p>' },
         ],
       },
-      { tipo: 'relacionados', enlaces: [...SERVICIOS, { url: '/placas-personalizadas/', texto: 'Placas de debutante y fin de temporada' }, { url: '/llaveros-personalizados/', texto: 'Llaveros e imanes con el escudo' }, { url: '/trofeos-personalizados-ribera-baixa/', texto: 'Clubes de Sueca y la Ribera Baixa' }] },
+      { tipo: 'relacionados', enlaces: [...SERVICIOS, { url: '/trofeos-padel/', texto: 'Trofeos para torneos de pádel' }, { url: '/placas-personalizadas/', texto: 'Placas de debutante y fin de temporada' }, { url: '/llaveros-personalizados/', texto: 'Llaveros e imanes con el escudo' }, { url: '/trofeos-personalizados-ribera-baixa/', texto: 'Clubes de Sueca y la Ribera Baixa' }] },
     ],
     cta: { titulo: '¿Tu club necesita premios?', texto: 'Mándanos el escudo y cuéntanos el torneo o la temporada. Te pasamos presupuesto con el diseño incluido y guardamos el archivo para el año que viene.' },
   },

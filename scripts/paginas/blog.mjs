@@ -6,6 +6,7 @@
 
 import { CATEGORIAS } from './_datos.mjs';
 import { ARTICULOS_2 } from './articulos-2.mjs';
+import { ARTICULOS_3 } from './articulos-3.mjs';
 
 const CAT = Object.fromEntries(CATEGORIAS.map((c) => [c.slug, c]));
 
@@ -174,7 +175,7 @@ export const ARTICULOS = [
 
 /* ---------- páginas ---------- */
 
-const enriquecido = [...ARTICULOS, ...ARTICULOS_2].map((a) => ({ ...a, categoriaNombre: CAT[a.categoria].nombre }));
+const enriquecido = [...ARTICULOS, ...ARTICULOS_2, ...ARTICULOS_3].map((a) => ({ ...a, categoriaNombre: CAT[a.categoria].nombre }));
 const categoriasConArticulos = CATEGORIAS.filter((c) => enriquecido.some((a) => a.categoria === c.slug));
 
 const paginaArticulo = (a) => {

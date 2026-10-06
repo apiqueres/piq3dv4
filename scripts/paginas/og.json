@@ -60,6 +60,12 @@
   "etiqueta": "Empresas"
  },
  {
+  "out": "public/og/trofeos-padel.jpg",
+  "src": "public/img/futsal-sueca.webp",
+  "titulo": "Trofeos de pádel para torneos y ligas",
+  "etiqueta": "Pádel"
+ },
+ {
   "out": "public/og/trofeos-personalizados-valencia.jpg",
   "src": "public/img/la-canyada.webp",
   "titulo": "Trofeos y medallas en València y l’Horta Sud",
@@ -292,5 +298,23 @@
   "src": "public/img/fibravalencia.webp",
   "titulo": "Caso práctico: el trofeo de la Volta a Peu FibraValencia, de la idea al podio",
   "etiqueta": "Casos"
+ },
+ {
+  "out": "public/og/blog-como-disenar-trofeo-con-escudo-del-club.jpg",
+  "src": "public/img/galeria/futsal-sueca.webp",
+  "titulo": "Cómo diseñar un trofeo con el escudo de tu club: qué enviar y qué se puede hacer",
+  "etiqueta": "Materiales e impresión 3D"
+ },
+ {
+  "out": "public/og/blog-ideas-trofeos-padel.jpg",
+  "src": "public/img/futsal-sueca.webp",
+  "titulo": "Ideas de trofeos para torneos de pádel: pala, pelota y red en 3D",
+  "etiqueta": "Ideas por evento"
+ },
+ {
+  "out": "public/og/blog-trofeos-medallas-olimpiadas-escolares.jpg",
+  "src": "public/img/galeria/medallasenselimitsfondo.webp",
+  "titulo": "Trofeos y medallas para olimpiadas escolares y AMPAs: cómo organizarlo bien",
+  "etiqueta": "Ideas por evento"
  }
 ]

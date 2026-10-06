@@ -62,6 +62,7 @@ export const CLIENTES = [
   { ruta: 'trofeos-clubes-deportivos', nombre: 'Clubes deportivos' },
   { ruta: 'trofeos-fallas', nombre: 'Fallas' },
   { ruta: 'trofeos-empresas', nombre: 'Empresas' },
+  { ruta: 'trofeos-padel', nombre: 'Pádel' },
 ];
 
 /** Zonas con página propia. `localidades` alimenta areaServed y la lista visible. */
