@@ -45,6 +45,7 @@ export function trozosPortada(indexHtml) {
   const header = absolutiza(corta('<!-- HEADER -->', '<main id="top">'));
   let footer = absolutiza(corta('<!-- FOOTER -->', '<script src="public/vendor/'));
   // Columnas nuevas detrás de la lista de enlaces del pie (misma rejilla .footer__info).
+  if (footer.includes('footer__cols')) return { loader, header, footer };
   const fin = footer.indexOf('</section>', footer.indexOf('<section class="footer__info">'));
   footer = footer.slice(0, fin) + '      ' + columnasPie() + '\n    ' + footer.slice(fin);
   return { loader, header, footer };

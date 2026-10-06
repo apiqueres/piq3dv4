@@ -8,8 +8,9 @@ def rel(x): return x.replace('href="public/','href="../public/').replace('src="p
 head=rel(head); foot=rel(foot)
 # Columnas Servicios / Zonas / Blog (las escribe scripts/build-paginas.mjs)
 cols=open('scripts/paginas/footer-cols.html',encoding='utf-8').read().strip()
-_i=foot.index('</section>',foot.index('<section class="footer__info">'))
-foot=foot[:_i]+'      '+cols+chr(10)+'    '+foot[_i:]
+if 'footer__cols' not in foot:
+    _i=foot.index('</section>',foot.index('<section class="footer__info">'))
+    foot=foot[:_i]+'      '+cols+chr(10)+'    '+foot[_i:]
 order=['Trofeos','Medallas','Merchandising','Cartas QR']
 secs=[]
 for i,cat in enumerate(order):
