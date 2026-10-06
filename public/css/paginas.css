@@ -1,0 +1,128 @@
+@charset "UTF-8";
+/* ============================================================
+   PIQ3D — estilos SOLO para las páginas interiores generadas por
+   scripts/build-paginas.mjs (servicios, zonas, trabajos).
+   Se carga DESPUÉS de styles.css y no toca nada de la portada:
+   reutiliza sus variables, botones, cabecera, pie, .gal-hero,
+   .words/.mask y .reveal-up. Si cambias algo aquí, sube el ?v=
+   en build-paginas.mjs (nginx cachea el CSS un año).
+   ============================================================ */
+
+/* ---------- portada de página (hero) ---------- */
+.ph{min-height:auto;gap:20px;padding-bottom:clamp(40px,5vw,72px)}
+.ph .gal-hero__title{font-size:min(8.6vw,124px);line-height:.88;max-width:16ch}
+.ph__label{color:var(--grey-2)}
+.ph .gal-hero__desc{max-width:62ch;color:#cfcfcf}
+.ph__cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
+.crumbs{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:6px 10px;font-weight:800;font-stretch:78%;text-transform:uppercase;font-size:clamp(13px,1.1vw,16px);color:var(--grey-2)}
+.crumbs li+li::before{content:"/";margin-right:10px;color:#555}
+.crumbs a{color:#cfcfcf;text-decoration:none}
+.crumbs a:hover{color:var(--light);text-decoration:underline;text-underline-offset:3px}
+.crumbs [aria-current]{color:var(--light)}
+
+/* ---------- secciones de lectura ---------- */
+.ps{padding:clamp(56px,7vw,112px) var(--gutter);background:var(--light);color:var(--grey)}
+.ps[data-scheme="dark"]{background:var(--dark);color:#cfcfcf}
+.ps__inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);column-gap:clamp(32px,5vw,96px);row-gap:32px;align-items:start}
+.ps__inner--full{grid-template-columns:minmax(0,1fr)}
+.ps__title{font-family:var(--font-display);font-weight:400;text-transform:uppercase;font-size:min(6.4vw,76px);line-height:.9;letter-spacing:0;color:var(--dark);margin:0 0 24px;max-width:18ch}
+.ps[data-scheme="dark"] .ps__title{color:var(--light)}
+.ps__title .mask{padding:.16em .04em .08em;margin:-.16em -.04em -.08em}
+.ps__body{max-width:66ch;font-size:clamp(16px,1.2vw,19px);line-height:1.6}
+.ps__body p{margin:0 0 16px;text-wrap:pretty}
+.ps__body h3{font-family:var(--font);font-weight:800;font-stretch:78%;text-transform:uppercase;font-size:clamp(17px,1.4vw,22px);letter-spacing:.01em;color:var(--dark);margin:28px 0 10px}
+.ps[data-scheme="dark"] .ps__body h3{color:var(--light)}
+.ps__body ul,.ps__body ol{margin:0 0 16px;padding:0;list-style:none;display:grid;gap:8px}
+.ps__body ul li{padding-left:1.2em;position:relative}
+.ps__body ul li::before{content:"—";position:absolute;left:0;color:var(--grey-2)}
+.ps__body ol{counter-reset:n}
+.ps__body ol li{padding-left:2em;position:relative;counter-increment:n}
+.ps__body ol li::before{content:counter(n,decimal-leading-zero);position:absolute;left:0;top:.1em;font-weight:800;font-stretch:78%;font-size:.85em;color:var(--grey-2)}
+.ps__body a{color:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.ps__body a:hover{text-decoration-thickness:2px}
+.ps__body strong{color:var(--dark);font-weight:700}
+.ps[data-scheme="dark"] .ps__body strong{color:var(--light)}
+.ps__figure{margin:0;align-self:center}
+.ps__figure img,.ps__figure video{width:100%;height:auto;display:block}
+.ps__figure figcaption{margin-top:10px;font-weight:800;font-stretch:78%;text-transform:uppercase;font-size:13px;color:var(--grey-2)}
+
+/* ficha técnica (casos) y datos de zona */
+.ficha{margin:0 0 24px;display:grid;grid-template-columns:auto 1fr;gap:10px 24px;align-items:baseline;font-size:clamp(15px,1.1vw,17px)}
+.ficha dt{font-weight:800;font-stretch:78%;text-transform:uppercase;font-size:13px;color:var(--grey-2)}
+.ficha dd{margin:0;color:var(--dark)}
+.ps[data-scheme="dark"] .ficha dd{color:var(--light)}
+.towns{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 24px;padding:0;list-style:none}
+.towns li{border:1px solid var(--line);padding:6px 12px;font-weight:800;font-stretch:78%;text-transform:uppercase;font-size:13px;color:var(--dark)}
+.ps[data-scheme="dark"] .towns li{border-color:#333;color:var(--light)}
+
+/* ---------- pasos: idea → diseño → prototipo → producción → entrega ---------- */
+.steps{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:24px var(--gutter);counter-reset:s}
+.steps li{counter-increment:s;padding-top:16px;border-top:1px solid var(--line)}
+.ps[data-scheme="dark"] .steps li{border-color:#2a2a2a}
+.steps__num{font-family:var(--font-display);font-size:clamp(40px,4.5vw,64px);line-height:1;color:var(--dark)}
+.ps[data-scheme="dark"] .steps__num{color:var(--light)}
+.steps__title{display:block;margin:10px 0 6px;font-weight:800;font-stretch:78%;text-transform:uppercase;font-size:clamp(15px,1.2vw,18px);color:var(--dark)}
+.ps[data-scheme="dark"] .steps__title{color:var(--light)}
+.steps p{margin:0;font-size:clamp(14px,1.05vw,16px);line-height:1.5}
+
+/* ---------- tarjetas de trabajos ---------- */
+.cards{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px var(--gutter)}
+.cards--2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.card a{display:block;color:inherit;text-decoration:none}
+.card__media{aspect-ratio:4/5;background:#e9e9e9;overflow:hidden;display:grid;place-items:center}
+.ps[data-scheme="dark"] .card__media{background:#161616}
+.card__media img,.card__media video{width:100%;height:100%;object-fit:contain;display:block;transition:transform .9s var(--ease)}
+.card a:hover .card__media img,.card a:hover .card__media video{transform:scale(1.04)}
+.card__title{display:block;margin-top:16px;font-weight:800;font-stretch:78%;text-transform:uppercase;font-size:clamp(17px,1.4vw,22px);line-height:1;color:var(--dark)}
+.ps[data-scheme="dark"] .card__title{color:var(--light)}
+.card__meta{display:block;margin-top:6px;font-weight:800;font-stretch:78%;text-transform:uppercase;font-size:12px;color:var(--grey-2)}
+.card__desc{margin:8px 0 0;font-size:clamp(14px,1.05vw,16px);line-height:1.5;max-width:40ch}
+.card a:hover .card__title{text-decoration:underline;text-underline-offset:4px}
+
+/* ---------- preguntas frecuentes ---------- */
+.faq{margin:0;padding:0;list-style:none;border-top:1px solid var(--line)}
+.ps[data-scheme="dark"] .faq{border-color:#2a2a2a}
+.faq details{border-bottom:1px solid var(--line)}
+.ps[data-scheme="dark"] .faq details{border-color:#2a2a2a}
+.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:24px;align-items:center;padding:18px 0;font-weight:800;font-stretch:78%;text-transform:uppercase;font-size:clamp(15px,1.25vw,19px);color:var(--dark)}
+.ps[data-scheme="dark"] .faq summary{color:var(--light)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";flex:none;font-family:var(--font-display);font-size:1.4em;line-height:1;color:var(--grey-2);transition:transform .3s var(--ease)}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq__a{padding:0 0 20px;max-width:66ch;font-size:clamp(15px,1.15vw,18px);line-height:1.6}
+.faq__a p{margin:0 0 10px}
+
+/* ---------- enlaces relacionados ---------- */
+.related{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px var(--gutter)}
+.related a{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 0;border-top:1px solid var(--line);color:var(--dark);text-decoration:none;font-weight:800;font-stretch:78%;text-transform:uppercase;font-size:clamp(14px,1.15vw,18px);line-height:1.1}
+.ps[data-scheme="dark"] .related a{border-color:#2a2a2a;color:var(--light)}
+.related a::after{content:"→";flex:none;font-family:var(--font-display);font-size:1.3em;transition:transform .3s var(--ease)}
+.related a:hover::after{transform:translateX(6px)}
+.related a:hover{text-decoration:underline;text-underline-offset:4px}
+
+/* ---------- pie: columnas Servicios / Zonas / Blog ---------- */
+.footer__cols{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px var(--gutter);padding-top:32px;margin-top:40px;border-top:1px solid var(--line)}
+.footer__cols h4{margin:0 0 12px;font-weight:800;font-stretch:78%;text-transform:uppercase;font-size:13px;color:var(--grey-2)}
+.footer__cols ol{margin:0;padding:0;list-style:none}
+.footer__cols li+li{margin-top:8px}
+.footer__cols a{font-size:clamp(15px,1.15vw,18px)}
+
+/* ---------- vídeo del caso ---------- */
+.ps__figure video{background:#000}
+
+/* ---------- responsive ---------- */
+@media (max-width:1023px){
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cards,.cards--2{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ps__inner{grid-template-columns:minmax(0,1fr)}
+  .ps__figure{max-width:560px}
+}
+@media (max-width:640px){
+  .steps,.cards,.cards--2,.footer__cols{grid-template-columns:minmax(0,1fr)}
+  .ph .gal-hero__title{font-size:min(12vw,64px)}
+  .ficha{grid-template-columns:1fr;gap:2px}
+  .ficha dd{margin-bottom:10px}
+}
+@media (prefers-reduced-motion:reduce){
+  .card a:hover .card__media img,.card a:hover .card__media video,.related a:hover::after{transform:none}
+}

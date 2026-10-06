@@ -6,6 +6,10 @@ head=idx[idx.index('<!-- HEADER -->'):idx.index('<main id="top">')]
 foot=idx[idx.index('<!-- FOOTER -->'):idx.index('<script src="public/vendor/')]
 def rel(x): return x.replace('href="public/','href="../public/').replace('src="public/','src="../public/').replace('href="#top"','href="../"').replace('href="#','href="../#').replace('href="galeria/"','href="./"')
 head=rel(head); foot=rel(foot)
+# Columnas Servicios / Zonas / Blog (las escribe scripts/build-paginas.mjs)
+cols=open('scripts/paginas/footer-cols.html',encoding='utf-8').read().strip()
+_i=foot.index('</section>',foot.index('<section class="footer__info">'))
+foot=foot[:_i]+'      '+cols+chr(10)+'    '+foot[_i:]
 order=['Trofeos','Medallas','Merchandising','Cartas QR']
 secs=[]
 for i,cat in enumerate(order):
@@ -23,7 +27,8 @@ page=f'''<!doctype html>
 <title>Galería — PIQ3D</title>
 <meta name="description" content="Todos los trofeos, medallas, merchandising y cartas QR impresos en 3D por PIQ3D en Sueca.">
 <link rel="icon" href="../public/logo/extrusor_white.png">
-{fonts}<link rel="stylesheet" href="../styles.css?v=14">
+{fonts}<link rel="stylesheet" href="../styles.css?v=19">
+<link rel="stylesheet" href="../public/css/paginas.css?v=1">
 </head>
 <body class="page-galeria">
 
@@ -51,7 +56,7 @@ page=f'''<!doctype html>
 {foot}<script src="../public/vendor/gsap.min.js"></script>
 <script src="../public/vendor/ScrollTrigger.min.js"></script>
 <script src="../public/vendor/lenis.min.js"></script>
-<script src="../main.js?v=10"></script>
+<script src="../main.js?v=13"></script>
 </body>
 </html>
 '''

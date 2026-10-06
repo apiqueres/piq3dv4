@@ -10,8 +10,6 @@
     <lastmod>2026-10-02</lastmod>
     <priority>0.8</priority>
   </url>
-  <!-- Paginas legales: prioridad baja a proposito. Tienen que ser
-       accesibles e indexables, pero no compiten con la portada. -->
   <url>
     <loc>https://piq3d.com/terminos/</loc>
     <lastmod>2026-10-02</lastmod>
@@ -31,5 +29,80 @@
     <loc>https://piq3d.com/cookies/</loc>
     <lastmod>2026-10-02</lastmod>
     <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://piq3d.com/trofeos-personalizados/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://piq3d.com/medallas-personalizadas/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://piq3d.com/trofeos-personalizados-valencia/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://piq3d.com/trofeos-personalizados-ribera-baixa/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://piq3d.com/trofeos-personalizados-la-safor/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://piq3d.com/trabajos/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://piq3d.com/trabajos/volta-a-peu-fibravalencia/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://piq3d.com/trabajos/torneig-ciutat-de-sueca/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://piq3d.com/trabajos/trofeu-antonio-puchades/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://piq3d.com/trabajos/trofeu-pepe-soler/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://piq3d.com/trabajos/placas-debutante-ad-esperanza/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://piq3d.com/trabajos/volta-a-peu-la-canyada/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://piq3d.com/trabajos/juntos-por-super-ivan/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://piq3d.com/trabajos/10k-sense-limits/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://piq3d.com/trabajos/medallas-ajedrez-sueca/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.6</priority>
   </url>
 </urlset>

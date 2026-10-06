@@ -26,6 +26,7 @@ import { fileURLToPath } from 'node:url';
 
 import { ACTUALIZADO, PENDIENTE_DE_DATOS, TITULAR } from './legal/datos.mjs';
 import { PAGINAS } from './legal/paginas.mjs';
+import { PIE } from './paginas/_datos.mjs';
 
 const RAIZ = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -77,6 +78,9 @@ th{font-weight:800;font-stretch:78%;text-transform:uppercase;font-size:13px;colo
 .pie nav a{color:var(--light);text-decoration:none;font-weight:800;font-stretch:78%;text-transform:uppercase;font-size:clamp(14px,1.2vw,18px)}
 .pie nav a:hover,.pie nav a[aria-current]{text-decoration:underline}
 .pie p{margin:0;font-size:14px}
+.pie__seo{flex-basis:100%;display:flex;flex-wrap:wrap;gap:8px 28px;padding-bottom:18px;border-bottom:1px solid #2a2a2a}
+.pie__seo nav a{font-size:14px;color:var(--grey-2)}
+.pie__seo nav a:hover{color:var(--light)}
 @media (max-width:640px){:root{--gutter:16px}.top__logo img{height:44px}dl.datos{grid-template-columns:1fr;gap:2px}dl.datos dd{margin-bottom:10px}}
 `.trim();
 
@@ -99,6 +103,10 @@ function render(pagina) {
   const cuerpo = pagina.secciones
     .map((s) => `    <h2>${escapa(s.h)}</h2>\n${envuelveTablas(s.html.trim())}`)
     .join('\n\n');
+
+  const navSeo = [['Servicios', PIE.servicios], ['Zonas', PIE.zonas]]
+    .map(([t, l]) => `<nav aria-label="${t}">${l.map((e) => `<a href="${e.url}">${escapa(e.texto)}</a>`).join(' ')}</nav>`)
+    .join(' ');
 
   return `<!doctype html>
 <html lang="es">
@@ -131,6 +139,9 @@ ${cuerpo}
 
 <footer class="pie">
   <div class="pie__inner">
+    <div class="pie__seo">
+    ${navSeo}
+    </div>
     <nav aria-label="Páginas legales">
       ${nav}
     </nav>

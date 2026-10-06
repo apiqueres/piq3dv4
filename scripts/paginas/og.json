@@ -1,0 +1,92 @@
+[
+ {
+  "out": "public/og/trofeos-personalizados.jpg",
+  "src": "public/img/fibravalencia.webp",
+  "titulo": "Trofeos personalizados impresos en 3D",
+  "etiqueta": "Servicio"
+ },
+ {
+  "out": "public/og/medallas-personalizadas.jpg",
+  "src": "public/img/medalla-xiques.webp",
+  "titulo": "Medallas personalizadas impresas en 3D",
+  "etiqueta": "Servicio"
+ },
+ {
+  "out": "public/og/trofeos-personalizados-valencia.jpg",
+  "src": "public/img/la-canyada.webp",
+  "titulo": "Trofeos y medallas en València y l’Horta Sud",
+  "etiqueta": "Zona"
+ },
+ {
+  "out": "public/og/trofeos-personalizados-ribera-baixa.jpg",
+  "src": "public/img/futsal-sueca.webp",
+  "titulo": "Trofeos y medallas en Sueca y la Ribera Baixa",
+  "etiqueta": "Zona"
+ },
+ {
+  "out": "public/og/trofeos-personalizados-la-safor.jpg",
+  "src": "public/img/logo-trofeos.webp",
+  "titulo": "Trofeos y medallas en la Safor",
+  "etiqueta": "Zona"
+ },
+ {
+  "out": "public/og/trabajos.jpg",
+  "src": "public/img/futsal-sueca.webp",
+  "titulo": "Trabajos realizados",
+  "etiqueta": "Trabajos"
+ },
+ {
+  "out": "public/og/trabajos-volta-a-peu-fibravalencia.jpg",
+  "src": "public/img/fibravalencia.webp",
+  "titulo": "Volta a Peu FibraValencia",
+  "etiqueta": "Trofeo de carrera popular"
+ },
+ {
+  "out": "public/og/trabajos-torneig-ciutat-de-sueca.jpg",
+  "src": "public/img/futsal-sueca.webp",
+  "titulo": "Torneig Ciutat de Sueca",
+  "etiqueta": "Trofeos de torneo"
+ },
+ {
+  "out": "public/og/trabajos-trofeu-antonio-puchades.jpg",
+  "src": "public/img/trofeu-puchades.webp",
+  "titulo": "Trofeu Antonio Puchades",
+  "etiqueta": "Trofeo de torneo"
+ },
+ {
+  "out": "public/og/trabajos-trofeu-pepe-soler.jpg",
+  "src": "public/img/pepe-soler.webp",
+  "titulo": "Trofeu Pepe Soler",
+  "etiqueta": "Trofeo de balonmano"
+ },
+ {
+  "out": "public/og/trabajos-placas-debutante-ad-esperanza.jpg",
+  "src": "public/img/ad-esperanza.webp",
+  "titulo": "Placas de debutante AD Esperanza",
+  "etiqueta": "Placas personalizadas"
+ },
+ {
+  "out": "public/og/trabajos-volta-a-peu-la-canyada.jpg",
+  "src": "public/img/la-canyada.webp",
+  "titulo": "Volta a Peu La Canyada",
+  "etiqueta": "Trofeo de carrera popular"
+ },
+ {
+  "out": "public/og/trabajos-juntos-por-super-ivan.jpg",
+  "src": "public/img/galeria/juntos-por-super-ivan.webp",
+  "titulo": "Juntos por Super Iván",
+  "etiqueta": "Trofeo solidario"
+ },
+ {
+  "out": "public/og/trabajos-10k-sense-limits.jpg",
+  "src": "public/img/galeria/medallasenselimitsfondo.webp",
+  "titulo": "10K Sense Límits",
+  "etiqueta": "Medallas de carrera"
+ },
+ {
+  "out": "public/og/trabajos-medallas-ajedrez-sueca.jpg",
+  "src": "public/img/galeria/medallasajedrezsueca.webp",
+  "titulo": "Open de ajedrez Ciutat de Sueca",
+  "etiqueta": "Medallas de torneo"
+ }
+]
