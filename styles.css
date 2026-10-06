@@ -254,6 +254,8 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
   .nav{display:none}.burger{display:block}.header__inner{grid-template-columns:1fr auto auto;gap:12px}
   .hero__line{flex-wrap:wrap;justify-content:center;white-space:normal;padding:0!important;transform:none!important}
   .hero__title{row-gap:.2em}
+  /* "SOMOS [vídeo] PIQ3D" mide ~6.5em: solo esta línea se reduce para caber entera */
+  .hero__line--2{flex-wrap:nowrap;font-size:min(1em,calc((100vw - 2*var(--gutter))/6.9))}
   .hero__content{padding:calc(var(--header-h) + 16px) var(--gutter) var(--gutter)}
   .hero__desc{margin-left:0}
   .about,.touch,.about__farm{grid-template-columns:1fr}
