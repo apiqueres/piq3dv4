@@ -125,8 +125,7 @@ export const PIE = {
   ],
   blog: [
     { url: '/blog/', texto: 'Todos los artículos' },
-    { url: '/blog/cuanto-cuesta-un-trofeo-personalizado/', texto: 'Cuánto cuesta un trofeo personalizado' },
-    { url: '/blog/trofeos-impresos-en-3d-vs-tradicionales/', texto: 'Trofeos 3D frente a tradicionales' },
+    ...CATEGORIAS.map((c) => ({ url: `/blog/${c.slug}/`, texto: c.nombre })),
     ...CLIENTES.map((c) => ({ url: `/${c.ruta}/`, texto: `Trofeos para ${c.nombre.toLowerCase()}` })),
   ],
 };

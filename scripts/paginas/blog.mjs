@@ -5,6 +5,7 @@
 // ============================================================
 
 import { CATEGORIAS } from './_datos.mjs';
+import { ARTICULOS_2 } from './articulos-2.mjs';
 
 const CAT = Object.fromEntries(CATEGORIAS.map((c) => [c.slug, c]));
 
@@ -173,7 +174,7 @@ export const ARTICULOS = [
 
 /* ---------- páginas ---------- */
 
-const enriquecido = ARTICULOS.map((a) => ({ ...a, categoriaNombre: CAT[a.categoria].nombre }));
+const enriquecido = [...ARTICULOS, ...ARTICULOS_2].map((a) => ({ ...a, categoriaNombre: CAT[a.categoria].nombre }));
 const categoriasConArticulos = CATEGORIAS.filter((c) => enriquecido.some((a) => a.categoria === c.slug));
 
 const paginaArticulo = (a) => {
@@ -238,13 +239,6 @@ const paginaBlog = () => ({
   lista: enriquecido.map((a) => `/blog/${a.slug}/`),
   bloques: [
     { tipo: 'articulos', h2: 'Últimos artículos', articulos: enriquecido },
-    {
-      tipo: 'texto',
-      h2: 'Lo que viene',
-      html: `
-<p>Estamos escribiendo sobre cómo encargar las medallas de una carrera popular (plazos y lista de comprobación), ideas de trofeos para fútbol sala y balonmano, trofeos para fallas, qué es el PLA y por qué es más sostenible, cómo funcionan los soportes de carta QR y NFC, y el caso completo del trofeo de la Volta a Peu FibraValencia.</p>
-<p>Mientras tanto, las páginas de <a href="/trofeos-personalizados/">trofeos</a>, <a href="/medallas-personalizadas/">medallas</a> e <a href="/impresion-3d-personalizada/">impresión 3D personalizada</a> responden a la mayoría de dudas.</p>`,
-    },
     { tipo: 'relacionados', h2: 'Por categoría', enlaces: [...categoriasConArticulos.map((c) => ({ url: `/blog/${c.slug}/`, texto: c.nombre })), { url: '/trabajos/', texto: 'Trabajos realizados' }] },
   ],
   cta: { titulo: '¿Hablamos?', texto: 'Si tu duda no está aquí, escríbenos por WhatsApp: respondemos en el día.' },

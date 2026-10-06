@@ -234,6 +234,18 @@
   "etiqueta": "Blog"
  },
  {
+  "out": "public/og/blog-ideas-por-evento.jpg",
+  "src": "public/img/pepe-soler.webp",
+  "titulo": "Blog: Ideas por evento",
+  "etiqueta": "Blog"
+ },
+ {
+  "out": "public/og/blog-casos.jpg",
+  "src": "public/img/fibravalencia.webp",
+  "titulo": "Blog: Casos",
+  "etiqueta": "Blog"
+ },
+ {
   "out": "public/og/blog-cuanto-cuesta-un-trofeo-personalizado.jpg",
   "src": "public/img/fibravalencia.webp",
   "titulo": "Cuánto cuesta un trofeo personalizado y de qué depende el precio",
@@ -244,5 +256,41 @@
   "src": "public/img/futsal-sueca.webp",
   "titulo": "Trofeos impresos en 3D frente a trofeos tradicionales: ventajas y diferencias",
   "etiqueta": "Materiales e impresión 3D"
+ },
+ {
+  "out": "public/og/blog-como-encargar-medallas-carrera-popular.jpg",
+  "src": "public/img/galeria/medallasenselimitsfondo.webp",
+  "titulo": "Cómo encargar las medallas de una carrera popular: plazos y lista de comprobación",
+  "etiqueta": "Precios y plazos"
+ },
+ {
+  "out": "public/og/blog-ideas-trofeos-futbol-sala-balonmano.jpg",
+  "src": "public/img/pepe-soler.webp",
+  "titulo": "Ideas de trofeos para torneos de fútbol sala y balonmano",
+  "etiqueta": "Ideas por evento"
+ },
+ {
+  "out": "public/og/blog-trofeos-para-fallas-ideas-ejemplos.jpg",
+  "src": "public/img/galeria/trofeo-paellas-fallas.webp",
+  "titulo": "Trofeos para fallas: ideas y ejemplos para los concursos de la comisión",
+  "etiqueta": "Ideas por evento"
+ },
+ {
+  "out": "public/og/blog-que-es-el-pla-material-sostenible.jpg",
+  "src": "public/img/la-canyada.webp",
+  "titulo": "Qué es el PLA y por qué es un material más sostenible para trofeos y medallas",
+  "etiqueta": "Materiales e impresión 3D"
+ },
+ {
+  "out": "public/og/blog-soportes-carta-qr-nfc-restaurantes.jpg",
+  "src": "public/img/galeria/cocobeach.webp",
+  "titulo": "Soportes de carta QR y NFC para restaurantes: cómo funcionan y qué tener en cuenta",
+  "etiqueta": "Ideas por evento"
+ },
+ {
+  "out": "public/og/blog-caso-trofeo-volta-a-peu-fibravalencia.jpg",
+  "src": "public/img/fibravalencia.webp",
+  "titulo": "Caso práctico: el trofeo de la Volta a Peu FibraValencia, de la idea al podio",
+  "etiqueta": "Casos"
  }
 ]
