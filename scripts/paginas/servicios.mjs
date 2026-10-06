@@ -89,7 +89,7 @@ export const SERVICIOS_PAG = [
       },
       {
         tipo: 'relacionados',
-        enlaces: [{ url: '/medallas-personalizadas/', texto: 'Medallas personalizadas impresas en 3D' }, ...ZONAS_ENLACES, { url: '/trabajos/', texto: 'Todos los trabajos documentados' }],
+        enlaces: [{ url: '/medallas-personalizadas/', texto: 'Medallas personalizadas impresas en 3D' }, { url: '/trofeos-carreras-populares/', texto: 'Trofeos para carreras populares' }, { url: '/trofeos-clubes-deportivos/', texto: 'Trofeos para clubes deportivos' }, { url: '/trofeos-fallas/', texto: 'Trofeos y premios para fallas' }, { url: '/trofeos-empresas/', texto: 'Trofeos y premios para empresas' }, { url: '/impresion-3d-personalizada/', texto: 'Impresión 3D personalizada' }, ...ZONAS_ENLACES, { url: '/trabajos/', texto: 'Todos los trabajos documentados' }, { url: '/blog/cuanto-cuesta-un-trofeo-personalizado/', texto: 'Blog: cuánto cuesta un trofeo personalizado' }],
       },
     ],
     cta: { titulo: '¿Hablamos de tu trofeo?', texto: 'Mándanos el escudo, la cantidad y la fecha del evento y te pasamos presupuesto con el diseño 3D incluido.' },
@@ -170,7 +170,7 @@ export const SERVICIOS_PAG = [
       },
       {
         tipo: 'relacionados',
-        enlaces: [{ url: '/trofeos-personalizados/', texto: 'Trofeos personalizados impresos en 3D' }, ...ZONAS_ENLACES, { url: '/trabajos/', texto: 'Todos los trabajos documentados' }],
+        enlaces: [{ url: '/trofeos-personalizados/', texto: 'Trofeos personalizados impresos en 3D' }, { url: '/trofeos-carreras-populares/', texto: 'Medallas y trofeos para carreras populares' }, { url: '/trofeos-clubes-deportivos/', texto: 'Trofeos para clubes deportivos' }, { url: '/impresion-3d-personalizada/', texto: 'Impresión 3D personalizada' }, ...ZONAS_ENLACES, { url: '/trabajos/', texto: 'Todos los trabajos documentados' }],
       },
     ],
     cta: { titulo: '¿Hablamos de tus medallas?', texto: 'Mándanos el logotipo, la cantidad y la fecha de la carrera y te pasamos presupuesto con el diseño y la cinta incluidos.' },

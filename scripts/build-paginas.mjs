@@ -28,6 +28,10 @@ import { CASOS, paginaCaso } from './paginas/casos.mjs';
 import { SERVICIOS_PAG } from './paginas/servicios.mjs';
 import { ZONAS_PAG } from './paginas/zonas.mjs';
 import { paginaIndice } from './paginas/indice.mjs';
+import { SERVICIOS_B_PAG } from './paginas/servicios-b.mjs';
+import { CLIENTES_PAG } from './paginas/clientes.mjs';
+import { PUEBLOS_PAG } from './paginas/pueblos.mjs';
+import { BLOG_PAG } from './paginas/blog.mjs';
 
 const RAIZ = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const HOY = new Date().toISOString().slice(0, 10);
@@ -37,7 +41,7 @@ const indexHtml = await readFile(resolve(RAIZ, 'index.html'), 'utf8');
 const trozos = trozosPortada(indexHtml);
 const casos = Object.fromEntries(CASOS.map((c) => [c.slug, c]));
 
-const paginas = [...SERVICIOS_PAG, ...ZONAS_PAG, paginaIndice(CASOS), ...CASOS.map((c) => paginaCaso(c, casos))];
+const paginas = [...SERVICIOS_PAG, ...SERVICIOS_B_PAG, ...CLIENTES_PAG, ...ZONAS_PAG, ...PUEBLOS_PAG, paginaIndice(CASOS), ...CASOS.map((c) => paginaCaso(c, casos)), ...BLOG_PAG];
 
 /* ---------- render ---------- */
 const salida = paginas.map((p) => ({ p, url: `/${p.ruta}/`, html: render(p, { trozos, casos }) }));
@@ -110,7 +114,7 @@ const fijas = [
   ['/privacidad/', '2026-10-02', '0.2'],
   ['/cookies/', '2026-10-02', '0.2'],
 ];
-const prioridad = (p) => (p.tipo === 'servicio' ? '0.9' : p.tipo === 'zona' ? '0.8' : p.tipo === 'indice' ? '0.7' : '0.6');
+const prioridad = (p) => (p.tipo === 'servicio' ? '0.9' : p.tipo === 'zona' ? '0.8' : p.tipo === 'indice' ? '0.7' : p.tipo === 'articulo' ? '0.6' : '0.6');
 const urls = [...fijas, ...salida.map(({ p, url }) => [url, HOY, prioridad(p)])]
   .map(([u, d, pr]) => `  <url>\n    <loc>${DOMINIO}${u}</loc>\n    <lastmod>${d}</lastmod>\n    <priority>${pr}</priority>\n  </url>`)
   .join('\n');

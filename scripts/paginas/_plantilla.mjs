@@ -95,6 +95,29 @@ const bloqueCasos = (b, esquema, casos) =>
     true,
   );
 
+const tarjetaArticulo = (a) =>
+  `<li class="card reveal-up"><a href="/blog/${a.slug}/"><span class="card__media"><img src="/${a.imagen.src}" alt="${escapa(a.imagen.alt)}" width="${a.imagen.w}" height="${a.imagen.h}" loading="lazy"></span><span class="card__meta">${escapa(a.categoriaNombre)} · ${escapa(a.fechaBonita)} · ${a.lectura} min</span><span class="card__title">${escapa(a.titulo)}</span><p class="card__desc">${escapa(a.resumen)}</p></a></li>`;
+
+const bloqueArticulos = (b, esquema) =>
+  seccion(
+    esquema,
+    b.h2,
+    `${b.intro ? `<div class="ps__body reveal-up"><p>${b.intro}</p></div>` : ''}${b.articulos.length ? `<ul class="cards">${b.articulos.map(tarjetaArticulo).join('')}</ul>` : '<div class="ps__body reveal-up"><p>Todavía no hay artículos aquí. Vuelve pronto.</p></div>'}${b.html ? `<div class="ps__body reveal-up">${b.html}</div>` : ''}`,
+    null,
+    true,
+  );
+
+/** Cuerpo de un artículo del blog: una sola columna de lectura, sin alternar fondos. */
+const bloqueCuerpo = (b) =>
+  `  <section class="ps" data-scheme="light">
+    <div class="ps__inner ps__inner--full">
+      <article class="article reveal-up">
+${b.html.trim()}
+      </article>
+    </div>
+  </section>
+`;
+
 const bloqueFaq = (b, esquema) =>
   seccion(
     esquema,
@@ -179,6 +202,22 @@ export function jsonLd(p, url) {
       url,
     });
   }
+  if (p.articulo) {
+    grafo.push({
+      '@type': 'Article',
+      '@id': `${url}#articulo`,
+      headline: p.h1.join(' '),
+      description: p.description,
+      image: abs(p.articulo.imagen),
+      datePublished: p.articulo.fecha,
+      dateModified: p.articulo.modificado || p.articulo.fecha,
+      author: { '@id': NEGOCIO.id },
+      publisher: { '@id': NEGOCIO.id },
+      mainEntityOfPage: url,
+      articleSection: p.articulo.categoria,
+      inLanguage: 'es',
+    });
+  }
   if (p.lista) {
     grafo.push({ '@type': 'ItemList', itemListElement: p.lista.map((u, i) => ({ '@type': 'ListItem', position: i + 1, url: abs(u) })) });
   }
@@ -207,6 +246,8 @@ export function render(p, { trozos, casos }) {
       if (b.tipo === 'casos') return bloqueCasos(b, e, casos);
       if (b.tipo === 'faq') return bloqueFaq(b, e);
       if (b.tipo === 'relacionados') return bloqueRelacionados(b, e);
+      if (b.tipo === 'articulos') return bloqueArticulos(b, e);
+      if (b.tipo === 'cuerpo') { n--; return bloqueCuerpo(b); }
       throw new Error(`Bloque desconocido: ${b.tipo}`);
     })
     .join('');
@@ -249,7 +290,7 @@ ${trozos.loader}${trozos.header}<main id="top">
     ${crumbs}
     <p class="tag tag--light ph__label"><span>${escapa(p.etiqueta)}</span></p>
     <h1 class="gal-hero__title">${p.h1.map((l) => words(escapa(l))).join('<br>')}</h1>
-    <p class="gal-hero__desc reveal-up">${p.intro}</p>
+    ${p.meta ? `<p class="ph__meta reveal-up">${escapa(p.meta)}</p>` : ''}<p class="gal-hero__desc reveal-up">${p.intro}</p>
     <div class="ph__cta reveal-up">${btn('Presupuesto por WhatsApp', NEGOCIO.whatsapp, { claro: true, externo: true })}${btn('Escribir un email', `mailto:${NEGOCIO.email}`, { claro: true })}</div>
   </section>
 

@@ -12,6 +12,54 @@
   "etiqueta": "Servicio"
  },
  {
+  "out": "public/og/placas-personalizadas.jpg",
+  "src": "public/img/ad-esperanza.webp",
+  "titulo": "Placas personalizadas impresas en 3D",
+  "etiqueta": "Servicio"
+ },
+ {
+  "out": "public/og/llaveros-personalizados.jpg",
+  "src": "public/img/llaveros-club.webp",
+  "titulo": "Llaveros personalizados y merchandising 3D",
+  "etiqueta": "Servicio"
+ },
+ {
+  "out": "public/og/soportes-qr-nfc-restaurantes.jpg",
+  "src": "public/img/galeria/cocobeach.webp",
+  "titulo": "Soportes de carta QR y NFC para restaurantes",
+  "etiqueta": "Servicio"
+ },
+ {
+  "out": "public/og/impresion-3d-personalizada.jpg",
+  "src": "public/img/logo-trofeos.webp",
+  "titulo": "Impresión 3D personalizada",
+  "etiqueta": "Servicio"
+ },
+ {
+  "out": "public/og/trofeos-carreras-populares.jpg",
+  "src": "public/img/la-canyada.webp",
+  "titulo": "Trofeos y medallas para carreras populares",
+  "etiqueta": "Carreras populares"
+ },
+ {
+  "out": "public/og/trofeos-clubes-deportivos.jpg",
+  "src": "public/img/futsal-sueca.webp",
+  "titulo": "Trofeos para clubes deportivos",
+  "etiqueta": "Clubes deportivos"
+ },
+ {
+  "out": "public/og/trofeos-fallas.jpg",
+  "src": "public/img/galeria/trofeo-paellas-fallas.webp",
+  "titulo": "Trofeos y premios para fallas",
+  "etiqueta": "Fallas"
+ },
+ {
+  "out": "public/og/trofeos-empresas.jpg",
+  "src": "public/img/galeria/rtecaquintin.webp",
+  "titulo": "Trofeos y premios para empresas",
+  "etiqueta": "Empresas"
+ },
+ {
   "out": "public/og/trofeos-personalizados-valencia.jpg",
   "src": "public/img/la-canyada.webp",
   "titulo": "Trofeos y medallas en València y l’Horta Sud",
@@ -28,6 +76,84 @@
   "src": "public/img/logo-trofeos.webp",
   "titulo": "Trofeos y medallas en la Safor",
   "etiqueta": "Zona"
+ },
+ {
+  "out": "public/og/impresion-3d-sueca.jpg",
+  "src": "public/img/logo-trofeos.webp",
+  "titulo": "Impresión 3D en Sueca",
+  "etiqueta": "Impresión 3D"
+ },
+ {
+  "out": "public/og/impresion-3d-albalat-de-la-ribera.jpg",
+  "src": "public/img/trofeu-puchades.webp",
+  "titulo": "Impresión 3D en Albalat de la Ribera",
+  "etiqueta": "Impresión 3D personalizada"
+ },
+ {
+  "out": "public/og/impresion-3d-polinya-de-xuquer.jpg",
+  "src": "public/img/galeria/medallasajedrezsueca.webp",
+  "titulo": "Impresión 3D en Polinyà de Xúquer",
+  "etiqueta": "Impresión 3D"
+ },
+ {
+  "out": "public/og/impresion-3d-benicull-de-xuquer.jpg",
+  "src": "public/img/llaveros-club.webp",
+  "titulo": "Impresión 3D en Benicull de Xúquer",
+  "etiqueta": "Impresión 3D"
+ },
+ {
+  "out": "public/og/impresion-3d-riola.jpg",
+  "src": "public/img/pepe-soler.webp",
+  "titulo": "Impresión 3D en Riola",
+  "etiqueta": "Impresión 3D"
+ },
+ {
+  "out": "public/og/impresion-3d-fortaleny.jpg",
+  "src": "public/img/galeria/juntos-por-super-ivan.webp",
+  "titulo": "Impresión 3D en Fortaleny",
+  "etiqueta": "Impresión 3D"
+ },
+ {
+  "out": "public/og/impresion-3d-corbera.jpg",
+  "src": "public/img/la-canyada.webp",
+  "titulo": "Impresión 3D en Corbera",
+  "etiqueta": "Impresión 3D"
+ },
+ {
+  "out": "public/og/impresion-3d-llauri.jpg",
+  "src": "public/img/galeria/medallasenselimitsfondo.webp",
+  "titulo": "Impresión 3D en Llaurí",
+  "etiqueta": "Impresión 3D"
+ },
+ {
+  "out": "public/og/impresion-3d-favara.jpg",
+  "src": "public/img/futsal-sueca.webp",
+  "titulo": "Impresión 3D en Favara",
+  "etiqueta": "Impresión 3D"
+ },
+ {
+  "out": "public/og/impresion-3d-cullera.jpg",
+  "src": "public/img/galeria/juntos-por-super-ivan.webp",
+  "titulo": "Impresión 3D en Cullera",
+  "etiqueta": "Impresión 3D"
+ },
+ {
+  "out": "public/og/impresion-3d-sollana.jpg",
+  "src": "public/img/trofeu-puchades.webp",
+  "titulo": "Impresión 3D en Sollana",
+  "etiqueta": "Impresión 3D"
+ },
+ {
+  "out": "public/og/impresion-3d-almussafes.jpg",
+  "src": "public/img/ad-esperanza.webp",
+  "titulo": "Impresión 3D en Almussafes",
+  "etiqueta": "Impresión 3D"
+ },
+ {
+  "out": "public/og/impresion-3d-alzira.jpg",
+  "src": "public/img/fibravalencia.webp",
+  "titulo": "Impresión 3D en Alzira",
+  "etiqueta": "Impresión 3D"
  },
  {
   "out": "public/og/trabajos.jpg",
@@ -88,5 +214,35 @@
   "src": "public/img/galeria/medallasajedrezsueca.webp",
   "titulo": "Open de ajedrez Ciutat de Sueca",
   "etiqueta": "Medallas de torneo"
+ },
+ {
+  "out": "public/og/blog.jpg",
+  "src": "public/img/pepe-soler.webp",
+  "titulo": "El blog de PIQ3D",
+  "etiqueta": "Blog"
+ },
+ {
+  "out": "public/og/blog-precios-y-plazos.jpg",
+  "src": "public/img/fibravalencia.webp",
+  "titulo": "Blog: Precios y plazos",
+  "etiqueta": "Blog"
+ },
+ {
+  "out": "public/og/blog-materiales-e-impresion-3d.jpg",
+  "src": "public/img/futsal-sueca.webp",
+  "titulo": "Blog: Materiales e impresión 3D",
+  "etiqueta": "Blog"
+ },
+ {
+  "out": "public/og/blog-cuanto-cuesta-un-trofeo-personalizado.jpg",
+  "src": "public/img/fibravalencia.webp",
+  "titulo": "Cuánto cuesta un trofeo personalizado y de qué depende el precio",
+  "etiqueta": "Precios y plazos"
+ },
+ {
+  "out": "public/og/blog-trofeos-impresos-en-3d-vs-tradicionales.jpg",
+  "src": "public/img/futsal-sueca.webp",
+  "titulo": "Trofeos impresos en 3D frente a trofeos tradicionales: ventajas y diferencias",
+  "etiqueta": "Materiales e impresión 3D"
  }
 ]

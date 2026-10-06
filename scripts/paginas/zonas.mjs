@@ -5,7 +5,8 @@
 //  publicados y lo dice: enseña los más cercanos (Cullera, Sueca).
 // ============================================================
 
-import { ZONAS } from './_datos.mjs';
+import { PUEBLOS, ZONAS } from './_datos.mjs';
+const PUEBLOS_ENLACES = PUEBLOS.map((p) => ({ url: `/impresion-3d-${p.slug}/`, texto: `Impresión 3D en ${p.nombre}` }));
 
 const [VALENCIA, RIBERA, SAFOR] = ZONAS;
 const towns = (z) => `<ul class="towns">${z.localidades.map((l) => `<li>${l}</li>`).join('')}</ul>`;
@@ -83,7 +84,7 @@ ${towns(VALENCIA)}
       {
         tipo: 'relacionados',
         h2: 'Servicios y zonas vecinas',
-        enlaces: [...SERVICIOS, { url: `/${RIBERA.ruta}/`, texto: 'Trofeos y medallas en la Ribera Baixa' }, { url: `/${SAFOR.ruta}/`, texto: 'Trofeos y medallas en la Safor' }, { url: '/trabajos/', texto: 'Todos los trabajos' }],
+        enlaces: [...SERVICIOS, { url: '/trofeos-carreras-populares/', texto: 'Trofeos y medallas para carreras populares' }, { url: '/impresion-3d-personalizada/', texto: 'Impresión 3D personalizada' }, { url: `/${RIBERA.ruta}/`, texto: 'Trofeos y medallas en la Ribera Baixa' }, { url: `/${SAFOR.ruta}/`, texto: 'Trofeos y medallas en la Safor' }, { url: '/trabajos/', texto: 'Todos los trabajos' }],
       },
     ],
     cta: { titulo: '¿Tu evento es en València?', texto: 'Cuéntanos qué celebras, cuántas piezas necesitas y para cuándo. Te pasamos presupuesto con el diseño incluido y entregamos en mano.' },
@@ -153,10 +154,11 @@ ${towns(RIBERA)}
           { p: '¿Hacéis soportes de carta QR para restaurantes?', r: '<p>Sí, con la forma del logotipo del restaurante y chip NFC opcional. Ya los tienen Coco Beach, Ca Quintín, El Niu y Sushi Room, en Sueca. Pídenos presupuesto por WhatsApp.</p>' },
         ],
       },
+      { tipo: 'relacionados', h2: 'Impresión 3D pueblo a pueblo', enlaces: PUEBLOS_ENLACES },
       {
         tipo: 'relacionados',
         h2: 'Servicios y zonas vecinas',
-        enlaces: [...SERVICIOS, { url: `/${VALENCIA.ruta}/`, texto: 'Trofeos y medallas en València y l’Horta Sud' }, { url: `/${SAFOR.ruta}/`, texto: 'Trofeos y medallas en la Safor' }, { url: '/trabajos/', texto: 'Todos los trabajos' }],
+        enlaces: [...SERVICIOS, { url: '/impresion-3d-personalizada/', texto: 'Impresión 3D personalizada' }, { url: '/trofeos-fallas/', texto: 'Trofeos y premios para fallas' }, { url: `/${VALENCIA.ruta}/`, texto: 'Trofeos y medallas en València y l’Horta Sud' }, { url: `/${SAFOR.ruta}/`, texto: 'Trofeos y medallas en la Safor' }, { url: '/trabajos/', texto: 'Todos los trabajos' }],
       },
     ],
     cta: { titulo: '¿Eres de Sueca o de Cullera?', texto: 'Entonces somos vecinos. Escríbenos por WhatsApp, cuéntanos el evento y, si quieres, pásate por el taller a ver piezas reales.' },
@@ -239,7 +241,7 @@ ${towns(SAFOR)}
       {
         tipo: 'relacionados',
         h2: 'Servicios y zonas vecinas',
-        enlaces: [...SERVICIOS, { url: `/${RIBERA.ruta}/`, texto: 'Trofeos y medallas en la Ribera Baixa' }, { url: `/${VALENCIA.ruta}/`, texto: 'Trofeos y medallas en València y l’Horta Sud' }, { url: '/trabajos/', texto: 'Todos los trabajos' }],
+        enlaces: [...SERVICIOS, { url: '/trofeos-fallas/', texto: 'Trofeos y premios para fallas' }, { url: '/impresion-3d-personalizada/', texto: 'Impresión 3D personalizada' }, { url: `/${RIBERA.ruta}/`, texto: 'Trofeos y medallas en la Ribera Baixa' }, { url: `/${VALENCIA.ruta}/`, texto: 'Trofeos y medallas en València y l’Horta Sud' }, { url: '/trabajos/', texto: 'Todos los trabajos' }],
       },
     ],
     cta: { titulo: '¿Tu evento es en la Safor?', texto: 'Cuéntanos qué celebras, cuántas piezas necesitas y para cuándo. Te pasamos presupuesto con el diseño incluido y lo entregamos en mano.' },

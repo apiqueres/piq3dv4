@@ -358,7 +358,7 @@ export const CASOS = [
 const fichaHtml = (ficha) => `<dl class="ficha">${ficha.map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join('')}</dl>`;
 
 export function paginaCaso(c, casos) {
-  const servicio = c.servicio === 'medallas' ? { url: '/medallas-personalizadas/', texto: 'Medallas personalizadas impresas en 3D' } : { url: '/trofeos-personalizados/', texto: 'Trofeos personalizados impresos en 3D' };
+  const servicio = c.servicio === 'medallas' ? { url: '/medallas-personalizadas/', texto: 'Medallas personalizadas impresas en 3D' } : c.servicio === 'placas' ? { url: '/placas-personalizadas/', texto: 'Placas personalizadas impresas en 3D' } : { url: '/trofeos-personalizados/', texto: 'Trofeos personalizados impresos en 3D' };
   const zona = ZONA[c.zona];
   const enlaces = [
     servicio,
