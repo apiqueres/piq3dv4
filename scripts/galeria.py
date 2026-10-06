@@ -28,7 +28,7 @@ page=f'''<!doctype html>
 <title>Galería — PIQ3D</title>
 <meta name="description" content="Todos los trofeos, medallas, merchandising y cartas QR impresos en 3D por PIQ3D en Sueca.">
 <link rel="icon" href="../public/logo/extrusor_white.png">
-{fonts}<link rel="stylesheet" href="../styles.css?v=19">
+{fonts}<link rel="stylesheet" href="../styles.css?v=20">
 <link rel="stylesheet" href="../public/css/paginas.css?v=1">
 </head>
 <body class="page-galeria">

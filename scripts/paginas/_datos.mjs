@@ -10,7 +10,7 @@ export const DOMINIO = 'https://piq3d.com';
 /** Versión de public/css/paginas.css. Súbela cada vez que cambie (nginx cachea el CSS un año). */
 export const CSS_VERSION = 2;
 /** Versión con la que la portada carga styles.css y main.js: se copia tal cual. */
-export const STYLES_VERSION = 19;
+export const STYLES_VERSION = 20;
 export const MAIN_VERSION = 13;
 
 export const NEGOCIO = {
